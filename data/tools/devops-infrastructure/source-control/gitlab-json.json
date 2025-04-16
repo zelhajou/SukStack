@@ -1,0 +1,52 @@
+{
+    "id": "gitlab",
+    "name": "GitLab",
+    "description": "Web-based DevOps platform that provides Git repository management with CI/CD pipelines, issue tracking, and extensive DevOps features in a complete application",
+    "website": "https://gitlab.com",
+    "logo": {
+      "path": "/logos/devops/source-control/gitlab.png",
+      "domain": "gitlab.com",
+      "alternatives": [
+        "about.gitlab.com"
+      ]
+    },
+    "features": [
+      "Integrated Git repository hosting",
+      "Built-in CI/CD with GitLab Pipelines",
+      "Issue tracking and project management",
+      "Container registry and package repository",
+      "Security scanning and vulnerability management",
+      "Wiki documentation",
+      "Self-hosted and cloud options"
+    ],
+    "pros": [
+      "Complete end-to-end DevOps platform",
+      "Single application for the entire software lifecycle",
+      "Strong CI/CD capabilities built directly into the platform",
+      "Better self-hosted support than many alternatives",
+      "More features in free tier compared to competitors"
+    ],
+    "cons": [
+      "UI can be complex with steep learning curve",
+      "Performance can be slower than some competitors",
+      "Smaller community than GitHub",
+      "Advanced features require higher-tier plans"
+    ],
+    "useCases": [
+      "Enterprise DevOps workflows",
+      "Self-hosted Git repository management",
+      "End-to-end software development lifecycle",
+      "Continuous integration and deployment",
+      "Secure DevOps with built-in security scanning"
+    ],
+    "pricing": {
+      "model": "freemium",
+      "hasFreeTier": true,
+      "details": "Free tier for basic features. Premium tier at $19/user/month, Ultimate tier at $99/user/month for advanced features and security."
+    },
+    "alternatives": ["github", "bitbucket", "azure-devops"],
+    "relatedTools": ["git", "gitlab-ci", "gitlab-runner"],
+    "type": "git-platform",
+    "categoryId": "devops-infrastructure",
+    "subcategoryId": "source-control"
+  }

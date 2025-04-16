@@ -1,0 +1,108 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Tool",
+    "type": "object",
+    "required": ["id", "name", "description", "website", "type", "categoryId", "subcategoryId"],
+    "properties": {
+      "id": {
+        "type": "string",
+        "pattern": "^[a-z0-9-]+$",
+        "description": "Unique identifier for the tool"
+      },
+      "name": {
+        "type": "string",
+        "description": "Display name of the tool"
+      },
+      "description": {
+        "type": "string",
+        "description": "Detailed description of the tool"
+      },
+      "website": {
+        "type": "string",
+        "format": "uri",
+        "description": "Official website URL"
+      },
+      "logo": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "domain": {
+            "type": "string"
+          },
+          "alternatives": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "features": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "pros": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "cons": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "useCases": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "pricing": {
+        "type": "object",
+        "properties": {
+          "model": {
+            "type": "string",
+            "enum": ["free", "freemium", "subscription", "one-time", "open-source", "contact"]
+          },
+          "hasFreeTier": {
+            "type": "boolean"
+          },
+          "details": {
+            "type": "string"
+          }
+        }
+      },
+      "alternatives": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "relatedTools": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "type": {
+        "type": "string",
+        "description": "Section ID this tool belongs to"
+      },
+      "categoryId": {
+        "type": "string",
+        "pattern": "^[a-z0-9-]+$",
+        "description": "ID of the parent category"
+      },
+      "subcategoryId": {
+        "type": "string",
+        "pattern": "^[a-z0-9-]+$",
+        "description": "ID of the parent subcategory"
+      }
+    }
+  }

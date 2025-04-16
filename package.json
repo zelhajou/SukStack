@@ -1,0 +1,20 @@
+{
+  "name": "sukstack",
+  "version": "1.0.0",
+  "description": "The Complete Development Ecosystem Reference",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    
+    "logo:download": "node scripts/download-logos.js",
+    "generate:docs": "node scripts/generate-docs.js",
+    "validate:data": "node scripts/validators/validate-data.js",
+    "migrate:data": "node scripts/migrate-data.js"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "vitepress": "^1.0.0-rc.24"
+  }
+}

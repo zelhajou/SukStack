@@ -1,0 +1,51 @@
+{
+    "id": "github",
+    "name": "GitHub",
+    "description": "Web-based hosting service for Git repositories offering collaboration features like pull requests, actions for CI/CD, project boards, and security scanning",
+    "website": "https://github.com",
+    "logo": {
+      "path": "/logos/devops/source-control/github.png",
+      "domain": "github.com",
+      "alternatives": [
+        "github.io"
+      ]
+    },
+    "features": [
+      "Repository hosting with unlimited public repositories",
+      "Pull requests for code review",
+      "GitHub Actions for CI/CD",
+      "Issue tracking and project boards",
+      "GitHub Pages for static site hosting",
+      "GitHub Packages for package management",
+      "Security features including vulnerability scanning"
+    ],
+    "pros": [
+      "Largest community of developers",
+      "Excellent documentation and guides",
+      "Robust API and extensive integrations",
+      "Built-in CI/CD with GitHub Actions",
+      "Free for public repositories and small teams"
+    ],
+    "cons": [
+      "Paid plans can be expensive for larger teams",
+      "Some enterprise features only available at higher tiers",
+      "Limited built-in project management compared to dedicated tools"
+    ],
+    "useCases": [
+      "Open source project hosting",
+      "Team collaboration for software development",
+      "Code review and quality management",
+      "Continuous integration and deployment",
+      "Issue tracking and project management"
+    ],
+    "pricing": {
+      "model": "freemium",
+      "hasFreeTier": true,
+      "details": "Free for public repositories and basic features. Team plan at $4/user/month, Enterprise plan at $21/user/month for advanced features."
+    },
+    "alternatives": ["gitlab", "bitbucket", "azure-devops"],
+    "relatedTools": ["git", "github-actions", "github-pages"],
+    "type": "git-platform",
+    "categoryId": "devops-infrastructure",
+    "subcategoryId": "source-control"
+  }

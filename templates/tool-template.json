@@ -1,0 +1,36 @@
+// templates/tool-template.json
+{
+  "id": "tool-id",
+  "name": "Tool Name",
+  "description": "Comprehensive description of the tool",
+  "website": "https://tool-website.com",
+  "logo": {
+    "path": "/logos/category/subcategory/tool-id.png",
+    "domain": "tool-website.com",
+    "alternatives": []
+  },
+  "features": [
+    "Feature 1",
+    "Feature 2"
+  ],
+  "pros": [
+    "Pro 1",
+    "Pro 2"
+  ],
+  "cons": [
+    "Con 1",
+    "Con 2"
+  ],
+  "useCases": [
+    "Use case 1",
+    "Use case 2"
+  ],
+  "pricing": {
+    "model": "freemium/subscription/one-time/open-source",
+    "hasFreeTier": true,
+    "details": "Pricing details"
+  },
+  "alternatives": [],
+  "relatedTools": [],
+  "type": "section-id"
+}
