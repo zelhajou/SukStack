@@ -38,5 +38,3 @@ npm run docs:dev
 2. Run the logo downloader: `npm run logo:download`
 3. Generate documentation: `npm run generate:docs`
 4. Preview your changes: `npm run docs:dev`
-
-IT 
