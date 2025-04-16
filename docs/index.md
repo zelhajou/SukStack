@@ -11,7 +11,7 @@ hero:
       link: /devops-infrastructure/source-control/
     - theme: alt
       text: View on GitHub
-      link: https://github.com/yourusername/sukstack
+      link: https://github.com/zelhajou/sukstack
 
 features:
   - icon: 🚀

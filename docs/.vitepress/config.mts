@@ -241,7 +241,7 @@ export default defineConfig({
     
     // Social links
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/yourusername/sukstack' }
+      { icon: 'github', link: 'https://github.com/zelhajou/sukstack' }
     ],
     
     // Footer
