@@ -247,7 +247,7 @@ export default defineConfig({
     // Footer
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2023-present SukStack Contributors'
+      copyright: 'Copyright © 2025-present SukStack Contributors'
     },
     
     // Search
