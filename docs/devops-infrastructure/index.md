@@ -4,15 +4,15 @@ DevOps & Infrastructure tools form the foundation of modern software development
 
 ## Key Categories
 
-### [source-control](/devops-infrastructure/source-control/)
+### [Source Control Management Systems](/devops-infrastructure/source-control/)
 
-### [ci-cd](/devops-infrastructure/ci-cd/)
+### [Continuous Integration & Continuous Delivery](/devops-infrastructure/ci-cd/)
 
-### [infrastructure-automation](/devops-infrastructure/infrastructure-automation/)
+### [Infrastructure Automation](/devops-infrastructure/infrastructure-automation/)
 
-### [monitoring](/devops-infrastructure/monitoring/)
+### [Monitoring & Observability](/devops-infrastructure/monitoring/)
 
-### [containers](/devops-infrastructure/containers/)
+### [Containers & Orchestration](/devops-infrastructure/containers/)
 
 ## Key Benefits
 
@@ -31,4 +31,15 @@ DevOps tools work together to create efficient software delivery pipelines:
 3. Infrastructure is provisioned and configured via **Infrastructure Automation**
 4. Applications are deployed using **Containers** and orchestration platforms
 5. System health is tracked through **Monitoring & Observability** tools
+
+## Modern DevOps Practices
+
+Key practices that underpin successful DevOps implementations:
+
+1. **Infrastructure as Code**: Managing infrastructure through version-controlled code
+2. **Continuous Integration**: Automatically testing code changes
+3. **Continuous Delivery**: Automating the release process
+4. **Microservices Architecture**: Building modular, independently deployable services
+5. **Observability**: Comprehensive monitoring and logging
+6. **GitOps**: Using Git as the source of truth for declarative infrastructure
 

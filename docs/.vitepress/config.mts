@@ -1,4 +1,144 @@
 import { defineConfig } from 'vitepress'
+import fs from 'fs'
+import path from 'path'
+
+/**
+ * Loads all category data from the data/categories directory
+ * @returns {Object} Object with category ID as key and category data as value
+ */
+function loadCategories() {
+  const categoriesDir = path.resolve('data/categories')
+  const categories = {}
+  
+  if (!fs.existsSync(categoriesDir)) {
+    console.warn('Categories directory not found:', categoriesDir)
+    return categories
+  }
+  
+  const files = fs.readdirSync(categoriesDir)
+  
+  for (const file of files) {
+    if (file.endsWith('.json')) {
+      try {
+        const categoryData = JSON.parse(fs.readFileSync(path.join(categoriesDir, file), 'utf8'))
+        categories[categoryData.id] = categoryData
+      } catch (error) {
+        console.error(`Error loading category from ${file}:`, error.message)
+      }
+    }
+  }
+  
+  return categories
+}
+
+/**
+ * Loads all subcategory data for a specific category
+ * @param {string} categoryId The ID of the category
+ * @returns {Object} Object with subcategory ID as key and subcategory data as value
+ */
+function loadSubcategories(categoryId) {
+  const subcategoriesDir = path.resolve('data/subcategories', categoryId)
+  const subcategories = {}
+  
+  if (!fs.existsSync(subcategoriesDir)) {
+    console.warn(`Subcategories directory not found for ${categoryId}:`, subcategoriesDir)
+    return subcategories
+  }
+  
+  const files = fs.readdirSync(subcategoriesDir)
+  
+  for (const file of files) {
+    if (file.endsWith('.json')) {
+      try {
+        const subcategoryData = JSON.parse(fs.readFileSync(path.join(subcategoriesDir, file), 'utf8'))
+        subcategories[subcategoryData.id] = subcategoryData
+      } catch (error) {
+        console.error(`Error loading subcategory from ${file}:`, error.message)
+      }
+    }
+  }
+  
+  return subcategories
+}
+
+/**
+ * Generates a sidebar entry for a specific category
+ * @param {Object} category The category data
+ * @param {Object} subcategoriesMap Map of subcategory ID to subcategory data
+ * @returns {Object} Sidebar entry for the category
+ */
+function generateCategorySidebar(category, subcategoriesMap) {
+  const sidebarEntry = {
+    text: category.title,
+    link: `/${category.id}/`,
+    collapsed: true,
+    items: []
+  }
+  
+  // Add subcategories if available
+  if (category.subcategories && category.subcategories.length > 0) {
+    for (const subcategoryId of category.subcategories) {
+      const subcategory = subcategoriesMap[subcategoryId]
+      
+      if (subcategory) {
+        const subcategoryEntry = {
+          text: subcategory.title,
+          link: `/${category.id}/${subcategoryId}/`,
+          collapsed: true,
+          items: []
+        }
+        
+        // Add sections if available
+        if (subcategory.sections && subcategory.sections.length > 0) {
+          for (const section of subcategory.sections) {
+            subcategoryEntry.items.push({
+              text: section.title,
+              link: `/${category.id}/${subcategoryId}/${section.id}/`
+            })
+          }
+        }
+        
+        sidebarEntry.items.push(subcategoryEntry)
+      }
+    }
+  }
+  
+  return sidebarEntry
+}
+
+/**
+ * Builds the sidebar configuration from all categories and subcategories
+ * @returns {Array} Complete sidebar configuration
+ */
+function buildSidebar() {
+  const sidebar = [
+    {
+      text: 'Overview',
+      items: [
+        { text: 'Introduction', link: '/overview' },
+        { text: 'All Categories', link: '/categories' }
+      ]
+    }
+  ]
+  
+  // Load all categories
+  const categories = loadCategories()
+  
+  // Sort categories by title
+  const sortedCategoryIds = Object.keys(categories).sort((a, b) => 
+    categories[a].title.localeCompare(categories[b].title)
+  )
+  
+  // Process each category
+  for (const categoryId of sortedCategoryIds) {
+    const category = categories[categoryId]
+    const subcategoriesMap = loadSubcategories(categoryId)
+    
+    sidebar.push(generateCategorySidebar(category, subcategoriesMap))
+  }
+  
+  return sidebar
+}
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -15,229 +155,11 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Overview', link: '/overview' },
+      { text: 'Categories', link: '/categories' }
     ],
     
-    // Sidebar with tree-like structure and overview pages
-    sidebar: {
-      '/': [
-        {
-          text: 'Overview',
-          items: [
-            { text: 'Introduction', link: '/overview' },
-            { text: 'All Categories', link: '/categories' }
-          ]
-        },
-        {
-          text: 'DevOps & Infrastructure',
-          link: '/devops-infrastructure/',
-          collapsed: false,
-          items: [
-            { 
-              text: 'Source Control',
-              link: '/devops-infrastructure/source-control/',
-              collapsed: false,
-              items: [
-                { text: 'Git Platforms', link: '/devops-infrastructure/source-control/git-platform/' },
-                { text: 'Distributed VCS', link: '/devops-infrastructure/source-control/distributed-vcs/' },
-                { text: 'Centralized VCS', link: '/devops-infrastructure/source-control/centralized-vcs/' },
-                { text: 'Specialized Tools', link: '/devops-infrastructure/source-control/specialized-vcs/' }
-              ]
-            },
-            { 
-              text: 'CI/CD',
-              link: '/devops-infrastructure/ci-cd/',
-              collapsed: true,
-              items: [
-                { text: 'Build Tools', link: '/devops-infrastructure/ci-cd/build-tools/' },
-                { text: 'Deployment Platforms', link: '/devops-infrastructure/ci-cd/deployment/' },
-                { text: 'Pipeline Tools', link: '/devops-infrastructure/ci-cd/pipelines/' }
-              ]
-            },
-            { 
-              text: 'Infrastructure Automation',
-              link: '/devops-infrastructure/infrastructure-automation/',
-              collapsed: true,
-              items: [
-                { text: 'IaC Tools', link: '/devops-infrastructure/infrastructure-automation/iac/' },
-                { text: 'Configuration Management', link: '/devops-infrastructure/infrastructure-automation/config-management/' }
-              ]
-            },
-            { 
-              text: 'Monitoring & Observability',
-              link: '/devops-infrastructure/monitoring/',
-              collapsed: true,
-              items: [
-                { text: 'Monitoring Tools', link: '/devops-infrastructure/monitoring/tools/' },
-                { text: 'Log Management', link: '/devops-infrastructure/monitoring/logging/' },
-                { text: 'APM', link: '/devops-infrastructure/monitoring/apm/' }
-              ]
-            },
-            { 
-              text: 'Container Orchestration',
-              link: '/devops-infrastructure/containers/',
-              collapsed: true,
-              items: [
-                { text: 'Kubernetes Ecosystem', link: '/devops-infrastructure/containers/kubernetes/' },
-                { text: 'Container Runtimes', link: '/devops-infrastructure/containers/runtimes/' }
-              ]
-            }
-          ]
-        },
-        {
-          text: 'Cloud Computing',
-          link: '/cloud/',
-          collapsed: true,
-          items: [
-            { 
-              text: 'Public Cloud',
-              link: '/cloud/public-cloud/',
-              collapsed: true,
-              items: [
-                { text: 'AWS', link: '/cloud/public-cloud/aws/' },
-                { text: 'Azure', link: '/cloud/public-cloud/azure/' },
-                { text: 'Google Cloud', link: '/cloud/public-cloud/gcp/' }
-              ]
-            },
-            { 
-              text: 'Private Cloud',
-              link: '/cloud/private-cloud/',
-              collapsed: true,
-              items: [
-                { text: 'OpenStack', link: '/cloud/private-cloud/openstack/' },
-                { text: 'VMware', link: '/cloud/private-cloud/vmware/' }
-              ]
-            },
-            { 
-              text: 'Serverless',
-              link: '/cloud/serverless/',
-              collapsed: true,
-              items: [
-                { text: 'FaaS', link: '/cloud/serverless/faas/' },
-                { text: 'BaaS', link: '/cloud/serverless/baas/' }
-              ]
-            }
-          ]
-        },
-        {
-          text: 'Web Development',
-          link: '/web-development/',
-          collapsed: true,
-          items: [
-            { 
-              text: 'Frontend',
-              link: '/web-development/frontend/',
-              collapsed: true,
-              items: [
-                { text: 'Frameworks', link: '/web-development/frontend/frameworks/' },
-                { text: 'UI Libraries', link: '/web-development/frontend/ui-libraries/' },
-                { text: 'State Management', link: '/web-development/frontend/state-management/' }
-              ]
-            },
-            { 
-              text: 'Backend',
-              link: '/web-development/backend/',
-              collapsed: true,
-              items: [
-                { text: 'Frameworks', link: '/web-development/backend/frameworks/' },
-                { text: 'API Development', link: '/web-development/backend/api/' },
-                { text: 'Authentication', link: '/web-development/backend/auth/' }
-              ]
-            }
-          ]
-        },
-        {
-          text: 'Data Technologies',
-          link: '/data/',
-          collapsed: true,
-          items: [
-            { 
-              text: 'Databases',
-              link: '/data/databases/',
-              collapsed: true,
-              items: [
-                { text: 'Relational', link: '/data/databases/relational/' },
-                { text: 'NoSQL', link: '/data/databases/nosql/' },
-                { text: 'NewSQL', link: '/data/databases/newsql/' }
-              ]
-            },
-            { 
-              text: 'Data Processing',
-              link: '/data/processing/',
-              collapsed: true,
-              items: [
-                { text: 'Batch Processing', link: '/data/processing/batch/' },
-                { text: 'Stream Processing', link: '/data/processing/streaming/' }
-              ]
-            },
-            { 
-              text: 'Machine Learning',
-              link: '/data/machine-learning/',
-              collapsed: true,
-              items: [
-                { text: 'Frameworks', link: '/data/machine-learning/frameworks/' },
-                { text: 'MLOps', link: '/data/machine-learning/mlops/' }
-              ]
-            }
-          ]
-        },
-        {
-          text: 'Security',
-          link: '/security/',
-          collapsed: true,
-          items: [
-            { text: 'Overview', link: '/security/' },
-            { 
-              text: 'Identity & Access',
-              link: '/security/identity/',
-              collapsed: true,
-              items: [
-                { text: 'Overview', link: '/security/identity/' },
-                { text: 'Authentication', link: '/security/identity/authentication/' },
-                { text: 'Authorization', link: '/security/identity/authorization/' }
-              ]
-            },
-            { 
-              text: 'Application Security',
-              link: '/security/appsec/',
-              collapsed: true,
-              items: [
-                { text: 'Overview', link: '/security/appsec/' },
-                { text: 'SAST', link: '/security/appsec/sast/' },
-                { text: 'DAST', link: '/security/appsec/dast/' }
-              ]
-            }
-          ]
-        },
-        {
-          text: 'Mobile Development',
-          link: '/mobile/',
-          collapsed: true,
-          items: [
-            { text: 'Overview', link: '/mobile/' },
-            { 
-              text: 'Cross-platform',
-              link: '/mobile/cross-platform/',
-              collapsed: true,
-              items: [
-                { text: 'Overview', link: '/mobile/cross-platform/' },
-                { text: 'React Native', link: '/mobile/cross-platform/react-native/' },
-                { text: 'Flutter', link: '/mobile/cross-platform/flutter/' }
-              ]
-            },
-            { 
-              text: 'iOS',
-              link: '/mobile/ios/',
-              collapsed: true,
-              items: [
-                { text: 'Overview', link: '/mobile/ios/' },
-                { text: 'Swift', link: '/mobile/ios/swift/' },
-                { text: 'SwiftUI', link: '/mobile/ios/swiftui/' }
-              ]
-            }
-          ]
-        }
-      ]
-    },
+    // Dynamically generated sidebar
+    sidebar: buildSidebar(),
     
     // Social links
     socialLinks: [
@@ -293,7 +215,7 @@ export default defineConfig({
     ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }],
     ['meta', { name: 'og:title', content: 'SukStack: The Complete Development Ecosystem Reference' }],
     ['meta', { name: 'og:description', content: 'A comprehensive index of development tools and technologies' }]
-    ],
+  ],
 
   ignoreDeadLinks: true
 })
