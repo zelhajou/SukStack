@@ -1,11 +1,10 @@
 /**
- * SukStack Logo Downloader
+ * SukStack Logo Downloader (Updated for consolidated tools file)
  * 
- * This script downloads logos for tools in the data files and saves them
+ * This script downloads logos for tools in the consolidated data files and saves them
  * directly to the docs/public/logos directory with consistent paths.
  * 
- * Usage: node download-logos.js [data-file.json]
- * Example: node download-logos.js data/devops-infrastructure/source-control.json
+ * Usage: node download-logos.js [options]
  */
 
 const fs = require('fs');
@@ -184,11 +183,11 @@ async function processToolLogo(tool, category, subcategory) {
 }
 
 /**
- * Process a JSON data file to download all tool logos
+ * Process a consolidated tools file
  */
-async function processDataFile(filePath) {
+async function processConsolidatedFile(filePath) {
   try {
-    console.log(`\n📄 Processing data file: ${filePath}`);
+    console.log(`\n📄 Processing consolidated file: ${filePath}`);
     
     // Read and parse the JSON file
     let fileContent;
@@ -212,19 +211,35 @@ async function processDataFile(filePath) {
       return null;
     }
     
-    // Extract category and subcategory from data
-    const category = data.category;
-    const subcategory = data.subcategory;
+    // Extract path components to determine category and subcategory
+    const pathParts = filePath.split(path.sep);
+    const fileNamePart = pathParts[pathParts.length - 1];
+    let categoryId, subcategoryId;
     
-    if (!category || !subcategory) {
-      console.error(`❌ Missing category or subcategory in ${filePath}`);
-      return null;
+    if (pathParts.includes('tools')) {
+      // Standard path structure: data/tools/category/subcategory.json
+      const toolsIndex = pathParts.indexOf('tools');
+      if (toolsIndex >= 0 && toolsIndex < pathParts.length - 1) {
+        categoryId = pathParts[toolsIndex + 1];
+        subcategoryId = fileNamePart.replace('.json', '');
+      }
+    }
+    
+    // If we couldn't determine category/subcategory from path, try to get from first tool
+    if (!categoryId || !subcategoryId) {
+      if (data.tools.length > 0 && data.tools[0].categoryId && data.tools[0].subcategoryId) {
+        categoryId = data.tools[0].categoryId;
+        subcategoryId = data.tools[0].subcategoryId;
+      } else {
+        console.error(`❌ Could not determine category and subcategory for ${filePath}`);
+        return null;
+      }
     }
     
     // Normalize category for file paths (for display purposes in logs)
-    const normalizedCategory = normalizeCategory(category);
+    const normalizedCategory = normalizeCategory(categoryId);
     
-    console.log(`📦 Original Category: ${category}, Using: ${normalizedCategory}, Subcategory: ${subcategory}`);
+    console.log(`📦 Category: ${categoryId}, Subcategory: ${subcategoryId}`);
     console.log(`🔢 Found ${data.tools.length} tools to process`);
     
     // Create results tracking object
@@ -246,13 +261,13 @@ async function processDataFile(filePath) {
     const categoryDir = path.join(LOGOS_DIR, normalizedCategory);
     ensureDir(categoryDir);
     
-    const subcategoryDir = path.join(categoryDir, subcategory);
+    const subcategoryDir = path.join(categoryDir, subcategoryId);
     ensureDir(subcategoryDir);
     
     // Process each tool
     for (const tool of data.tools) {
       console.log(`\n🔍 Processing logo for ${tool.name}...`);
-      const result = await processToolLogo(tool, category, subcategory);
+      const result = await processToolLogo(tool, categoryId, subcategoryId);
       
       if (result) {
         results[result.status] = (results[result.status] || 0) + 1;
@@ -312,35 +327,36 @@ function createDefaultPlaceholder() {
 }
 
 /**
- * Find all JSON files in a directory and its subdirectories
+ * Find all consolidated tool JSON files
  */
-function findJsonFiles(dirPath) {
+function findConsolidatedFiles() {
   const results = [];
+  const toolsDir = path.join(BASE_DIR, 'data', 'tools');
   
-  if (!fs.existsSync(dirPath)) {
-    console.error(`❌ Directory not found: ${dirPath}`);
+  if (!fs.existsSync(toolsDir)) {
+    console.error(`❌ Tools directory not found: ${toolsDir}`);
     return results;
   }
   
-  // Read all items in the directory
   try {
-    const items = fs.readdirSync(dirPath);
+    const categories = fs.readdirSync(toolsDir);
     
-    for (const item of items) {
-      const itemPath = path.join(dirPath, item);
-      const stats = fs.statSync(itemPath);
+    for (const category of categories) {
+      const categoryPath = path.join(toolsDir, category);
+      const stats = fs.statSync(categoryPath);
       
       if (stats.isDirectory()) {
-        // Recursively process subdirectories
-        const subResults = findJsonFiles(itemPath);
-        results.push(...subResults);
-      } else if (item.endsWith('.json')) {
-        // Add JSON files to the results
-        results.push(itemPath);
+        // Find JSON files directly in the category directory (consolidated files)
+        const files = fs.readdirSync(categoryPath);
+        for (const file of files) {
+          if (file.endsWith('.json')) {
+            results.push(path.join(categoryPath, file));
+          }
+        }
       }
     }
   } catch (error) {
-    console.error(`❌ Error reading directory ${dirPath}: ${error.message}`);
+    console.error(`❌ Error finding consolidated files: ${error.message}`);
   }
   
   return results;
@@ -351,8 +367,8 @@ function findJsonFiles(dirPath) {
  */
 async function main() {
   try {
-    console.log('🚀 SukStack Logo Downloader');
-    console.log('=======================');
+    console.log('🚀 SukStack Logo Downloader (Consolidated Version)');
+    console.log('========================================');
     
     // Create base directories
     ensureDir(DOCS_DIR);
@@ -362,40 +378,13 @@ async function main() {
     // Create default placeholder
     createDefaultPlaceholder();
     
-    // Check command line arguments
-    const args = process.argv.slice(2);
-    let filesToProcess = [];
+    // Find all consolidated tools files
+    const filesToProcess = findConsolidatedFiles();
+    console.log(`📚 Found ${filesToProcess.length} consolidated tools files`);
     
-    if (args.length === 0) {
-      // No arguments, search for all JSON files in the data directory
-      const dataDir = path.join(BASE_DIR, 'data');
-      console.log(`🔍 Searching for all JSON files in ${dataDir}...`);
-      filesToProcess = findJsonFiles(dataDir);
-      console.log(`📚 Found ${filesToProcess.length} JSON files`);
-    } else {
-      // Specific file or directory provided
-      const targetPath = path.resolve(args[0]);
-      
-      if (fs.existsSync(targetPath)) {
-        const stats = fs.statSync(targetPath);
-        
-        if (stats.isDirectory()) {
-          // Process all JSON files in the specified directory
-          console.log(`🔍 Searching for JSON files in ${targetPath}...`);
-          filesToProcess = findJsonFiles(targetPath);
-          console.log(`📚 Found ${filesToProcess.length} JSON files`);
-        } else if (targetPath.endsWith('.json')) {
-          // Process a single JSON file
-          filesToProcess = [targetPath];
-          console.log(`📄 Processing single file: ${targetPath}`);
-        } else {
-          console.error('❌ Specified path is not a JSON file or directory');
-          process.exit(1);
-        }
-      } else {
-        console.error(`❌ Path not found: ${targetPath}`);
-        process.exit(1);
-      }
+    if (filesToProcess.length === 0) {
+      console.error('❌ No consolidated tools files found.');
+      process.exit(1);
     }
     
     // Process all files
@@ -411,7 +400,7 @@ async function main() {
     };
     
     for (const file of filesToProcess) {
-      const results = await processDataFile(file);
+      const results = await processConsolidatedFile(file);
       
       if (results) {
         totalResults.success += results.success || 0;
