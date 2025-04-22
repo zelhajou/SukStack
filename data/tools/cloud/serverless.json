@@ -1,0 +1,304 @@
+{
+  "tools": [
+    {
+      "id": "aws-lambda",
+      "name": "AWS Lambda",
+      "description": "Serverless compute service that runs code in response to events and automatically manages the underlying compute resources",
+      "website": "https://aws.amazon.com/lambda/",
+      "logo": {
+        "path": "/logos/cloud/serverless/aws-lambda.png",
+        "domain": "aws.amazon.com",
+        "alternatives": [
+          "amazon.com"
+        ]
+      },
+      "type": "faas",
+      "categoryId": "cloud",
+      "subcategoryId": "serverless"
+    },
+    {
+      "id": "azure-functions",
+      "name": "Azure Functions",
+      "description": "Event-driven, serverless compute service that allows executing code triggered by various events without managing infrastructure",
+      "website": "https://azure.microsoft.com/en-us/services/functions/",
+      "logo": {
+        "path": "/logos/cloud/serverless/azure-functions.png",
+        "domain": "azure.microsoft.com",
+        "alternatives": [
+          "microsoft.com"
+        ]
+      },
+      "type": "faas",
+      "categoryId": "cloud",
+      "subcategoryId": "serverless"
+    },
+    {
+      "id": "google-cloud-functions",
+      "name": "Google Cloud Functions",
+      "description": "Serverless execution environment for building and connecting cloud services with code that runs in response to events",
+      "website": "https://cloud.google.com/functions",
+      "logo": {
+        "path": "/logos/cloud/serverless/google-cloud-functions.png",
+        "domain": "cloud.google.com",
+        "alternatives": [
+          "google.com"
+        ]
+      },
+      "type": "faas",
+      "categoryId": "cloud",
+      "subcategoryId": "serverless"
+    },
+    {
+      "id": "ibm-cloud-functions",
+      "name": "IBM Cloud Functions",
+      "description": "Function-as-a-service platform based on Apache OpenWhisk that executes code in response to events or direct invocations",
+      "website": "https://www.ibm.com/cloud/functions",
+      "logo": {
+        "path": "/logos/cloud/serverless/ibm-cloud-functions.png",
+        "domain": "ibm.com",
+        "alternatives": []
+      },
+      "type": "faas",
+      "categoryId": "cloud",
+      "subcategoryId": "serverless"
+    },
+    {
+      "id": "cloudflare-workers",
+      "name": "Cloudflare Workers",
+      "description": "Serverless execution environment that allows developers to create entirely new applications or augment existing ones at the edge of the network",
+      "website": "https://workers.cloudflare.com/",
+      "logo": {
+        "path": "/logos/cloud/serverless/cloudflare-workers.png",
+        "domain": "cloudflare.com",
+        "alternatives": [
+          "workers.cloudflare.com"
+        ]
+      },
+      "type": "faas",
+      "categoryId": "cloud",
+      "subcategoryId": "serverless"
+    },
+    {
+      "id": "deno-deploy",
+      "name": "Deno Deploy",
+      "description": "Distributed JavaScript deployment platform that allows deploying JavaScript at the edge, close to users",
+      "website": "https://deno.com/deploy",
+      "logo": {
+        "path": "/logos/cloud/serverless/deno-deploy.png",
+        "domain": "deno.com",
+        "alternatives": []
+      },
+      "type": "faas",
+      "categoryId": "cloud",
+      "subcategoryId": "serverless"
+    },
+    {
+      "id": "netlify-functions",
+      "name": "Netlify Functions",
+      "description": "Serverless functions that enable running server-side code without managing servers, integrated with Netlify's deployment platform",
+      "website": "https://www.netlify.com/products/functions/",
+      "logo": {
+        "path": "/logos/cloud/serverless/netlify-functions.png",
+        "domain": "netlify.com",
+        "alternatives": []
+      },
+      "type": "faas",
+      "categoryId": "cloud",
+      "subcategoryId": "serverless"
+    },
+    {
+      "id": "vercel-serverless-functions",
+      "name": "Vercel Serverless Functions",
+      "description": "Serverless functions tightly integrated with Vercel's deployment platform, enabling backend functionality without managing servers",
+      "website": "https://vercel.com/docs/serverless-functions/introduction",
+      "logo": {
+        "path": "/logos/cloud/serverless/vercel-serverless-functions.png",
+        "domain": "vercel.com",
+        "alternatives": []
+      },
+      "type": "faas",
+      "categoryId": "cloud",
+      "subcategoryId": "serverless"
+    },
+    {
+      "id": "firebase",
+      "name": "Firebase",
+      "description": "Platform that provides backend services like databases, authentication, storage, and functions for web and mobile applications",
+      "website": "https://firebase.google.com/",
+      "logo": {
+        "path": "/logos/cloud/serverless/firebase.png",
+        "domain": "firebase.google.com",
+        "alternatives": [
+          "google.com"
+        ]
+      },
+      "type": "baas",
+      "categoryId": "cloud",
+      "subcategoryId": "serverless"
+    },
+    {
+      "id": "aws-amplify",
+      "name": "AWS Amplify",
+      "description": "Development platform for building secure, scalable mobile and web applications with a set of tools and services including authentication, storage, and APIs",
+      "website": "https://aws.amazon.com/amplify/",
+      "logo": {
+        "path": "/logos/cloud/serverless/aws-amplify.png",
+        "domain": "aws.amazon.com",
+        "alternatives": [
+          "amazon.com"
+        ]
+      },
+      "type": "baas",
+      "categoryId": "cloud",
+      "subcategoryId": "serverless"
+    },
+    {
+      "id": "supabase",
+      "name": "Supabase",
+      "description": "Open source Firebase alternative providing all the backend services needed to build a product including database, authentication, and storage",
+      "website": "https://supabase.com/",
+      "logo": {
+        "path": "/logos/cloud/serverless/supabase.png",
+        "domain": "supabase.com",
+        "alternatives": []
+      },
+      "type": "baas",
+      "categoryId": "cloud",
+      "subcategoryId": "serverless"
+    },
+    {
+      "id": "appwrite",
+      "name": "Appwrite",
+      "description": "Self-hosted backend-as-a-service platform that provides authentication, databases, file storage, and cloud functions",
+      "website": "https://appwrite.io/",
+      "logo": {
+        "path": "/logos/cloud/serverless/appwrite.png",
+        "domain": "appwrite.io",
+        "alternatives": []
+      },
+      "type": "baas",
+      "categoryId": "cloud",
+      "subcategoryId": "serverless"
+    },
+    {
+      "id": "back4app",
+      "name": "Back4app",
+      "description": "Low-code backend platform built on open source Parse Server, offering database, authentication, and serverless functions",
+      "website": "https://www.back4app.com/",
+      "logo": {
+        "path": "/logos/cloud/serverless/back4app.png",
+        "domain": "back4app.com",
+        "alternatives": []
+      },
+      "type": "baas",
+      "categoryId": "cloud",
+      "subcategoryId": "serverless"
+    },
+    {
+      "id": "serverless-framework",
+      "name": "Serverless Framework",
+      "description": "Open-source framework for building serverless applications with support for multiple cloud providers and simplified deployment",
+      "website": "https://www.serverless.com/",
+      "logo": {
+        "path": "/logos/cloud/serverless/serverless-framework.png",
+        "domain": "serverless.com",
+        "alternatives": []
+      },
+      "type": "serverless-frameworks",
+      "categoryId": "cloud",
+      "subcategoryId": "serverless"
+    },
+    {
+      "id": "sam",
+      "name": "AWS SAM",
+      "description": "AWS Serverless Application Model is an open-source framework for building serverless applications on AWS",
+      "website": "https://aws.amazon.com/serverless/sam/",
+      "logo": {
+        "path": "/logos/cloud/serverless/sam.png",
+        "domain": "aws.amazon.com",
+        "alternatives": [
+          "amazon.com"
+        ]
+      },
+      "type": "serverless-frameworks",
+      "categoryId": "cloud",
+      "subcategoryId": "serverless"
+    },
+    {
+      "id": "claudia-js",
+      "name": "Claudia.js",
+      "description": "Tool for deploying Node.js projects to AWS Lambda and API Gateway with minimal configuration",
+      "website": "https://claudiajs.com/",
+      "logo": {
+        "path": "/logos/cloud/serverless/claudia-js.png",
+        "domain": "claudiajs.com",
+        "alternatives": []
+      },
+      "type": "serverless-frameworks",
+      "categoryId": "cloud",
+      "subcategoryId": "serverless"
+    },
+    {
+      "id": "zappa",
+      "name": "Zappa",
+      "description": "Framework for building and deploying server-less Python applications on AWS Lambda and API Gateway",
+      "website": "https://github.com/zappa/zappa",
+      "logo": {
+        "path": "/logos/cloud/serverless/zappa.png",
+        "domain": "github.com",
+        "alternatives": []
+      },
+      "type": "serverless-frameworks",
+      "categoryId": "cloud",
+      "subcategoryId": "serverless"
+    },
+    {
+      "id": "aws-eventbridge",
+      "name": "AWS EventBridge",
+      "description": "Serverless event bus that connects applications using events, making it easier to build scalable event-driven applications",
+      "website": "https://aws.amazon.com/eventbridge/",
+      "logo": {
+        "path": "/logos/cloud/serverless/aws-eventbridge.png",
+        "domain": "aws.amazon.com",
+        "alternatives": [
+          "amazon.com"
+        ]
+      },
+      "type": "event-streaming",
+      "categoryId": "cloud",
+      "subcategoryId": "serverless"
+    },
+    {
+      "id": "azure-event-grid",
+      "name": "Azure Event Grid",
+      "description": "Fully managed event routing service that enables event-driven architectures with serverless components",
+      "website": "https://azure.microsoft.com/en-us/services/event-grid/",
+      "logo": {
+        "path": "/logos/cloud/serverless/azure-event-grid.png",
+        "domain": "azure.microsoft.com",
+        "alternatives": [
+          "microsoft.com"
+        ]
+      },
+      "type": "event-streaming",
+      "categoryId": "cloud",
+      "subcategoryId": "serverless"
+    },
+    {
+      "id": "google-cloud-pub-sub",
+      "name": "Google Cloud Pub/Sub",
+      "description": "Messaging service for event-driven systems and streaming analytics, enabling asynchronous workflows",
+      "website": "https://cloud.google.com/pubsub",
+      "logo": {
+        "path": "/logos/cloud/serverless/google-cloud-pub-sub.png",
+        "domain": "cloud.google.com",
+        "alternatives": [
+          "google.com"
+        ]
+      },
+      "type": "event-streaming",
+      "categoryId": "cloud",
+      "subcategoryId": "serverless"
+    }
+  ]
+}

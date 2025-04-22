@@ -1,0 +1,238 @@
+{
+  "tools": [
+    {
+      "id": "openstack",
+      "name": "OpenStack",
+      "description": "Open source cloud computing platform that controls large pools of compute, storage, and networking resources throughout a datacenter, managed through a dashboard or API",
+      "website": "https://www.openstack.org/",
+      "logo": {
+        "path": "/logos/cloud/private-cloud/openstack.png",
+        "domain": "openstack.org",
+        "alternatives": []
+      },
+      "type": "private-platforms",
+      "categoryId": "cloud",
+      "subcategoryId": "private-cloud"
+    },
+    {
+      "id": "vmware-cloud-foundation",
+      "name": "VMware Cloud Foundation",
+      "description": "Integrated software stack that bundles compute, storage, networking, and management to deliver a hybrid cloud platform",
+      "website": "https://www.vmware.com/products/cloud-foundation.html",
+      "logo": {
+        "path": "/logos/cloud/private-cloud/vmware-cloud-foundation.png",
+        "domain": "vmware.com",
+        "alternatives": []
+      },
+      "type": "private-platforms",
+      "categoryId": "cloud",
+      "subcategoryId": "private-cloud"
+    },
+    {
+      "id": "openshift",
+      "name": "Red Hat OpenShift",
+      "description": "Enterprise Kubernetes platform that includes private cloud capabilities along with container orchestration",
+      "website": "https://www.redhat.com/en/technologies/cloud-computing/openshift",
+      "logo": {
+        "path": "/logos/cloud/private-cloud/openshift.png",
+        "domain": "redhat.com",
+        "alternatives": []
+      },
+      "type": "private-platforms",
+      "categoryId": "cloud",
+      "subcategoryId": "private-cloud"
+    },
+    {
+      "id": "cloudstack",
+      "name": "Apache CloudStack",
+      "description": "Open source cloud computing software for creating, managing, and deploying infrastructure cloud services",
+      "website": "https://cloudstack.apache.org/",
+      "logo": {
+        "path": "/logos/cloud/private-cloud/cloudstack.png",
+        "domain": "cloudstack.apache.org",
+        "alternatives": [
+          "apache.org"
+        ]
+      },
+      "type": "private-platforms",
+      "categoryId": "cloud",
+      "subcategoryId": "private-cloud"
+    },
+    {
+      "id": "vmware-vsphere",
+      "name": "VMware vSphere",
+      "description": "Virtualization platform consisting of ESXi hypervisor and vCenter management software, serving as the foundation for many private clouds",
+      "website": "https://www.vmware.com/products/vsphere.html",
+      "logo": {
+        "path": "/logos/cloud/private-cloud/vmware-vsphere.png",
+        "domain": "vmware.com",
+        "alternatives": []
+      },
+      "type": "virtualization",
+      "categoryId": "cloud",
+      "subcategoryId": "private-cloud"
+    },
+    {
+      "id": "hyper-v",
+      "name": "Microsoft Hyper-V",
+      "description": "Microsoft's hardware virtualization product that enables creating and managing virtual machines on Windows systems",
+      "website": "https://www.microsoft.com/en-us/cloud-platform/server-virtualization",
+      "logo": {
+        "path": "/logos/cloud/private-cloud/hyper-v.png",
+        "domain": "microsoft.com",
+        "alternatives": []
+      },
+      "type": "virtualization",
+      "categoryId": "cloud",
+      "subcategoryId": "private-cloud"
+    },
+    {
+      "id": "kvm",
+      "name": "KVM (Kernel-based Virtual Machine)",
+      "description": "Open source virtualization technology built into Linux that allows the kernel to function as a hypervisor",
+      "website": "https://www.linux-kvm.org/",
+      "logo": {
+        "path": "/logos/cloud/private-cloud/kvm.png",
+        "domain": "linux-kvm.org",
+        "alternatives": []
+      },
+      "type": "virtualization",
+      "categoryId": "cloud",
+      "subcategoryId": "private-cloud"
+    },
+    {
+      "id": "xen",
+      "name": "Xen Project",
+      "description": "Free and open-source type-1 hypervisor that allows multiple operating systems to share the same hardware",
+      "website": "https://xenproject.org/",
+      "logo": {
+        "path": "/logos/cloud/private-cloud/xen.png",
+        "domain": "xenproject.org",
+        "alternatives": []
+      },
+      "type": "virtualization",
+      "categoryId": "cloud",
+      "subcategoryId": "private-cloud"
+    },
+    {
+      "id": "nutanix",
+      "name": "Nutanix",
+      "description": "Enterprise cloud platform that brings the agility and simplicity of public cloud to private datacenter infrastructure",
+      "website": "https://www.nutanix.com/",
+      "logo": {
+        "path": "/logos/cloud/private-cloud/nutanix.png",
+        "domain": "nutanix.com",
+        "alternatives": []
+      },
+      "type": "cloud-software",
+      "categoryId": "cloud",
+      "subcategoryId": "private-cloud"
+    },
+    {
+      "id": "proxmox",
+      "name": "Proxmox VE",
+      "description": "Open source server management platform for enterprise virtualization that integrates KVM hypervisor and LXC containers",
+      "website": "https://www.proxmox.com/en/proxmox-ve",
+      "logo": {
+        "path": "/logos/cloud/private-cloud/proxmox.png",
+        "domain": "proxmox.com",
+        "alternatives": []
+      },
+      "type": "cloud-software",
+      "categoryId": "cloud",
+      "subcategoryId": "private-cloud"
+    },
+    {
+      "id": "opennebula",
+      "name": "OpenNebula",
+      "description": "Simple but feature-rich open source solution to build and manage private clouds and virtualization data centers",
+      "website": "https://opennebula.io/",
+      "logo": {
+        "path": "/logos/cloud/private-cloud/opennebula.png",
+        "domain": "opennebula.io",
+        "alternatives": []
+      },
+      "type": "cloud-software",
+      "categoryId": "cloud",
+      "subcategoryId": "private-cloud"
+    },
+    {
+      "id": "eucalyptus",
+      "name": "Eucalyptus",
+      "description": "Open source software for building AWS-compatible private and hybrid clouds",
+      "website": "https://www.eucalyptus.cloud/",
+      "logo": {
+        "path": "/logos/cloud/private-cloud/eucalyptus.png",
+        "domain": "eucalyptus.cloud",
+        "alternatives": [
+          "appscale.com"
+        ]
+      },
+      "type": "cloud-software",
+      "categoryId": "cloud",
+      "subcategoryId": "private-cloud"
+    },
+    {
+      "id": "aws-outposts",
+      "name": "AWS Outposts",
+      "description": "Fully managed service that extends AWS infrastructure, services, and tools to virtually any datacenter, co-location space, or on-premises facility",
+      "website": "https://aws.amazon.com/outposts/",
+      "logo": {
+        "path": "/logos/cloud/private-cloud/aws-outposts.png",
+        "domain": "aws.amazon.com",
+        "alternatives": [
+          "amazon.com"
+        ]
+      },
+      "type": "hosted-private-cloud",
+      "categoryId": "cloud",
+      "subcategoryId": "private-cloud"
+    },
+    {
+      "id": "azure-stack",
+      "name": "Azure Stack",
+      "description": "Extension of Azure that lets you run apps in an on-premises environment and deliver Azure services in your datacenter",
+      "website": "https://azure.microsoft.com/en-us/overview/azure-stack/",
+      "logo": {
+        "path": "/logos/cloud/private-cloud/azure-stack.png",
+        "domain": "azure.microsoft.com",
+        "alternatives": [
+          "microsoft.com"
+        ]
+      },
+      "type": "hosted-private-cloud",
+      "categoryId": "cloud",
+      "subcategoryId": "private-cloud"
+    },
+    {
+      "id": "google-anthos",
+      "name": "Google Anthos",
+      "description": "Google's modern application management platform that extends Google Cloud services and engineering practices to your environments",
+      "website": "https://cloud.google.com/anthos",
+      "logo": {
+        "path": "/logos/cloud/private-cloud/google-anthos.png",
+        "domain": "cloud.google.com",
+        "alternatives": [
+          "google.com"
+        ]
+      },
+      "type": "hosted-private-cloud",
+      "categoryId": "cloud",
+      "subcategoryId": "private-cloud"
+    },
+    {
+      "id": "ibm-cloud-private",
+      "name": "IBM Cloud Private",
+      "description": "Enterprise-grade application platform for developing and managing containerized applications across on-premises, public and private clouds",
+      "website": "https://www.ibm.com/cloud/cloud-private",
+      "logo": {
+        "path": "/logos/cloud/private-cloud/ibm-cloud-private.png",
+        "domain": "ibm.com",
+        "alternatives": []
+      },
+      "type": "hosted-private-cloud",
+      "categoryId": "cloud",
+      "subcategoryId": "private-cloud"
+    }
+  ]
+}

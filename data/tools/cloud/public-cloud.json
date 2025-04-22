@@ -1,0 +1,312 @@
+{
+  "tools": [
+    {
+      "id": "aws-ec2",
+      "name": "Amazon EC2",
+      "description": "Elastic Compute Cloud provides resizable compute capacity in the cloud, allowing users to run virtual servers for various workloads",
+      "website": "https://aws.amazon.com/ec2/",
+      "logo": {
+        "path": "/logos/cloud/public-cloud/aws-ec2.png",
+        "domain": "aws.amazon.com",
+        "alternatives": [
+          "amazon.com"
+        ]
+      },
+      "type": "aws",
+      "categoryId": "cloud",
+      "subcategoryId": "public-cloud"
+    },
+    {
+      "id": "aws-s3",
+      "name": "Amazon S3",
+      "description": "Simple Storage Service offers object storage with high durability, availability, and virtually unlimited scalability",
+      "website": "https://aws.amazon.com/s3/",
+      "logo": {
+        "path": "/logos/cloud/public-cloud/aws-s3.png",
+        "domain": "aws.amazon.com",
+        "alternatives": [
+          "amazon.com"
+        ]
+      },
+      "type": "aws",
+      "categoryId": "cloud",
+      "subcategoryId": "public-cloud"
+    },
+    {
+      "id": "aws-lambda",
+      "name": "AWS Lambda",
+      "description": "Serverless compute service that runs code in response to events and automatically manages the underlying resources",
+      "website": "https://aws.amazon.com/lambda/",
+      "logo": {
+        "path": "/logos/cloud/public-cloud/aws-lambda.png",
+        "domain": "aws.amazon.com",
+        "alternatives": [
+          "amazon.com"
+        ]
+      },
+      "type": "aws",
+      "categoryId": "cloud",
+      "subcategoryId": "public-cloud"
+    },
+    {
+      "id": "aws-rds",
+      "name": "Amazon RDS",
+      "description": "Relational Database Service makes it easy to set up, operate, and scale relational databases in the cloud",
+      "website": "https://aws.amazon.com/rds/",
+      "logo": {
+        "path": "/logos/cloud/public-cloud/aws-rds.png",
+        "domain": "aws.amazon.com",
+        "alternatives": [
+          "amazon.com"
+        ]
+      },
+      "type": "aws",
+      "categoryId": "cloud",
+      "subcategoryId": "public-cloud"
+    },
+    {
+      "id": "azure-vm",
+      "name": "Azure Virtual Machines",
+      "description": "Create Windows and Linux virtual machines with the configurations, scale, and availability needed for applications",
+      "website": "https://azure.microsoft.com/en-us/services/virtual-machines/",
+      "logo": {
+        "path": "/logos/cloud/public-cloud/azure-vm.png",
+        "domain": "azure.microsoft.com",
+        "alternatives": [
+          "microsoft.com"
+        ]
+      },
+      "type": "azure",
+      "categoryId": "cloud",
+      "subcategoryId": "public-cloud"
+    },
+    {
+      "id": "azure-storage",
+      "name": "Azure Storage",
+      "description": "Durable, highly available, and massively scalable cloud storage services including blob, file, queue, and table storage",
+      "website": "https://azure.microsoft.com/en-us/services/storage/",
+      "logo": {
+        "path": "/logos/cloud/public-cloud/azure-storage.png",
+        "domain": "azure.microsoft.com",
+        "alternatives": [
+          "microsoft.com"
+        ]
+      },
+      "type": "azure",
+      "categoryId": "cloud",
+      "subcategoryId": "public-cloud"
+    },
+    {
+      "id": "azure-functions",
+      "name": "Azure Functions",
+      "description": "Event-driven serverless compute platform that solves complex orchestration problems without managing infrastructure",
+      "website": "https://azure.microsoft.com/en-us/services/functions/",
+      "logo": {
+        "path": "/logos/cloud/public-cloud/azure-functions.png",
+        "domain": "azure.microsoft.com",
+        "alternatives": [
+          "microsoft.com"
+        ]
+      },
+      "type": "azure",
+      "categoryId": "cloud",
+      "subcategoryId": "public-cloud"
+    },
+    {
+      "id": "azure-sql",
+      "name": "Azure SQL Database",
+      "description": "Intelligent, scalable, relational database service built for the cloud with automated updates, provisioning, and backups",
+      "website": "https://azure.microsoft.com/en-us/services/sql-database/",
+      "logo": {
+        "path": "/logos/cloud/public-cloud/azure-sql.png",
+        "domain": "azure.microsoft.com",
+        "alternatives": [
+          "microsoft.com"
+        ]
+      },
+      "type": "azure",
+      "categoryId": "cloud",
+      "subcategoryId": "public-cloud"
+    },
+    {
+      "id": "gcp-compute",
+      "name": "Google Compute Engine",
+      "description": "Secure and customizable compute service that lets you create and run virtual machines on Google's infrastructure",
+      "website": "https://cloud.google.com/compute",
+      "logo": {
+        "path": "/logos/cloud/public-cloud/gcp-compute.png",
+        "domain": "cloud.google.com",
+        "alternatives": [
+          "google.com"
+        ]
+      },
+      "type": "gcp",
+      "categoryId": "cloud",
+      "subcategoryId": "public-cloud"
+    },
+    {
+      "id": "gcp-storage",
+      "name": "Google Cloud Storage",
+      "description": "Object storage for companies of all sizes with global edge-caching and high durability and availability",
+      "website": "https://cloud.google.com/storage",
+      "logo": {
+        "path": "/logos/cloud/public-cloud/gcp-storage.png",
+        "domain": "cloud.google.com",
+        "alternatives": [
+          "google.com"
+        ]
+      },
+      "type": "gcp",
+      "categoryId": "cloud",
+      "subcategoryId": "public-cloud"
+    },
+    {
+      "id": "gcp-functions",
+      "name": "Google Cloud Functions",
+      "description": "Event-driven serverless compute platform that runs your code without managing servers with automatic scaling",
+      "website": "https://cloud.google.com/functions",
+      "logo": {
+        "path": "/logos/cloud/public-cloud/gcp-functions.png",
+        "domain": "cloud.google.com",
+        "alternatives": [
+          "google.com"
+        ]
+      },
+      "type": "gcp",
+      "categoryId": "cloud",
+      "subcategoryId": "public-cloud"
+    },
+    {
+      "id": "gcp-bigquery",
+      "name": "Google BigQuery",
+      "description": "Serverless, highly-scalable, and cost-effective cloud data warehouse designed for business agility",
+      "website": "https://cloud.google.com/bigquery",
+      "logo": {
+        "path": "/logos/cloud/public-cloud/gcp-bigquery.png",
+        "domain": "cloud.google.com",
+        "alternatives": [
+          "google.com"
+        ]
+      },
+      "type": "gcp",
+      "categoryId": "cloud",
+      "subcategoryId": "public-cloud"
+    },
+    {
+      "id": "digitalocean",
+      "name": "DigitalOcean",
+      "description": "Cloud platform focused on simplicity for developers with straightforward pricing and developer-friendly user interface",
+      "website": "https://www.digitalocean.com/",
+      "logo": {
+        "path": "/logos/cloud/public-cloud/digitalocean.png",
+        "domain": "digitalocean.com",
+        "alternatives": []
+      },
+      "type": "other-clouds",
+      "categoryId": "cloud",
+      "subcategoryId": "public-cloud"
+    },
+    {
+      "id": "linode",
+      "name": "Linode",
+      "description": "Cloud computing platform offering virtual private servers and other cloud services with a focus on simplicity and high performance",
+      "website": "https://www.linode.com/",
+      "logo": {
+        "path": "/logos/cloud/public-cloud/linode.png",
+        "domain": "linode.com",
+        "alternatives": [
+          "akamai.com"
+        ]
+      },
+      "type": "other-clouds",
+      "categoryId": "cloud",
+      "subcategoryId": "public-cloud"
+    },
+    {
+      "id": "oracle-cloud",
+      "name": "Oracle Cloud",
+      "description": "Enterprise cloud offering computing, database, storage, and networking services with a focus on enterprise applications and autonomous capabilities",
+      "website": "https://www.oracle.com/cloud/",
+      "logo": {
+        "path": "/logos/cloud/public-cloud/oracle-cloud.png",
+        "domain": "oracle.com",
+        "alternatives": []
+      },
+      "type": "other-clouds",
+      "categoryId": "cloud",
+      "subcategoryId": "public-cloud"
+    },
+    {
+      "id": "ibm-cloud",
+      "name": "IBM Cloud",
+      "description": "Full-stack cloud platform with over 170 products and services covering data, containers, AI, IoT, and blockchain",
+      "website": "https://www.ibm.com/cloud",
+      "logo": {
+        "path": "/logos/cloud/public-cloud/ibm-cloud.png",
+        "domain": "ibm.com",
+        "alternatives": []
+      },
+      "type": "other-clouds",
+      "categoryId": "cloud",
+      "subcategoryId": "public-cloud"
+    },
+    {
+      "id": "dropbox",
+      "name": "Dropbox",
+      "description": "File hosting service offering cloud storage, file synchronization, and personal cloud with collaboration features",
+      "website": "https://www.dropbox.com/",
+      "logo": {
+        "path": "/logos/cloud/public-cloud/dropbox.png",
+        "domain": "dropbox.com",
+        "alternatives": []
+      },
+      "type": "cloud-storage",
+      "categoryId": "cloud",
+      "subcategoryId": "public-cloud"
+    },
+    {
+      "id": "box",
+      "name": "Box",
+      "description": "Content management platform offering secure, enterprise-grade file sharing, collaboration, and workflow capabilities",
+      "website": "https://www.box.com/",
+      "logo": {
+        "path": "/logos/cloud/public-cloud/box.png",
+        "domain": "box.com",
+        "alternatives": []
+      },
+      "type": "cloud-storage",
+      "categoryId": "cloud",
+      "subcategoryId": "public-cloud"
+    },
+    {
+      "id": "onedrive",
+      "name": "Microsoft OneDrive",
+      "description": "File hosting service operated by Microsoft that allows users to store files and personal data in the cloud",
+      "website": "https://onedrive.live.com/",
+      "logo": {
+        "path": "/logos/cloud/public-cloud/onedrive.png",
+        "domain": "microsoft.com",
+        "alternatives": [
+          "live.com"
+        ]
+      },
+      "type": "cloud-storage",
+      "categoryId": "cloud",
+      "subcategoryId": "public-cloud"
+    },
+    {
+      "id": "google-drive",
+      "name": "Google Drive",
+      "description": "File storage and synchronization service developed by Google that allows storing files in the cloud with real-time collaboration",
+      "website": "https://drive.google.com/",
+      "logo": {
+        "path": "/logos/cloud/public-cloud/google-drive.png",
+        "domain": "google.com",
+        "alternatives": []
+      },
+      "type": "cloud-storage",
+      "categoryId": "cloud",
+      "subcategoryId": "public-cloud"
+    }
+  ]
+}

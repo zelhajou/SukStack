@@ -1,0 +1,184 @@
+{
+  "tools": [
+    {
+      "id": "terraform",
+      "name": "Terraform",
+      "description": "Open-source infrastructure as code software tool that enables defining and provisioning infrastructure across multiple cloud providers using declarative configuration files",
+      "website": "https://www.terraform.io/",
+      "logo": {
+        "path": "/logos/devops/infrastructure-automation/terraform.png",
+        "domain": "terraform.io",
+        "alternatives": [
+          "hashicorp.com"
+        ]
+      },
+      "type": "iac-tools",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "infrastructure-automation"
+    },
+    {
+      "id": "cloudformation",
+      "name": "AWS CloudFormation",
+      "description": "AWS service for modeling and provisioning cloud resources using infrastructure as code templates in JSON or YAML format",
+      "website": "https://aws.amazon.com/cloudformation/",
+      "logo": {
+        "path": "/logos/devops/infrastructure-automation/cloudformation.png",
+        "domain": "aws.amazon.com",
+        "alternatives": []
+      },
+      "type": "iac-tools",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "infrastructure-automation"
+    },
+    {
+      "id": "pulumi",
+      "name": "Pulumi",
+      "description": "Open-source infrastructure as code tool that allows developers to define infrastructure using familiar programming languages like TypeScript, Python, Go, and C#",
+      "website": "https://www.pulumi.com/",
+      "logo": {
+        "path": "/logos/devops/infrastructure-automation/pulumi.png",
+        "domain": "pulumi.com",
+        "alternatives": []
+      },
+      "type": "iac-tools",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "infrastructure-automation"
+    },
+    {
+      "id": "ansible",
+      "name": "Ansible",
+      "description": "Open-source automation tool for configuration management, application deployment, and task automation using a simple YAML syntax called playbooks",
+      "website": "https://www.ansible.com/",
+      "logo": {
+        "path": "/logos/devops/infrastructure-automation/ansible.png",
+        "domain": "ansible.com",
+        "alternatives": [
+          "redhat.com"
+        ]
+      },
+      "type": "config-management",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "infrastructure-automation"
+    },
+    {
+      "id": "chef",
+      "name": "Chef",
+      "description": "Configuration management tool that uses Ruby-based DSL to write system configurations as code, ensuring servers are consistently configured across the infrastructure",
+      "website": "https://www.chef.io/",
+      "logo": {
+        "path": "/logos/devops/infrastructure-automation/chef.png",
+        "domain": "chef.io",
+        "alternatives": [
+          "progress.com"
+        ]
+      },
+      "type": "config-management",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "infrastructure-automation"
+    },
+    {
+      "id": "puppet",
+      "name": "Puppet",
+      "description": "Configuration management tool that automates the provisioning and management of infrastructure using a declarative language to define system configurations",
+      "website": "https://puppet.com/",
+      "logo": {
+        "path": "/logos/devops/infrastructure-automation/puppet.png",
+        "domain": "puppet.com",
+        "alternatives": []
+      },
+      "type": "config-management",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "infrastructure-automation"
+    },
+    {
+      "id": "saltstack",
+      "name": "SaltStack",
+      "description": "Configuration management and remote execution tool that uses a high-speed data bus to communicate with nodes and provides real-time system updates",
+      "website": "https://saltproject.io/",
+      "logo": {
+        "path": "/logos/devops/infrastructure-automation/saltstack.png",
+        "domain": "saltproject.io",
+        "alternatives": [
+          "vmware.com"
+        ]
+      },
+      "type": "config-management",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "infrastructure-automation"
+    },
+    {
+      "id": "crossplane",
+      "name": "Crossplane",
+      "description": "Open-source Kubernetes add-on that extends the Kubernetes API to provision and manage cloud infrastructure and services using Kubernetes custom resources",
+      "website": "https://crossplane.io/",
+      "logo": {
+        "path": "/logos/devops/infrastructure-automation/crossplane.png",
+        "domain": "crossplane.io",
+        "alternatives": []
+      },
+      "type": "cloud-orchestration",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "infrastructure-automation"
+    },
+    {
+      "id": "cloudify",
+      "name": "Cloudify",
+      "description": "Open-source cloud orchestration platform that automates the deployment, scaling, and lifecycle management of applications across multiple cloud environments",
+      "website": "https://cloudify.co/",
+      "logo": {
+        "path": "/logos/devops/infrastructure-automation/cloudify.png",
+        "domain": "cloudify.co",
+        "alternatives": []
+      },
+      "type": "cloud-orchestration",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "infrastructure-automation"
+    },
+    {
+      "id": "istio",
+      "name": "Istio",
+      "description": "Open-source service mesh that provides a uniform way to connect, secure, control, and observe microservices across Kubernetes clusters",
+      "website": "https://istio.io/",
+      "logo": {
+        "path": "/logos/devops/infrastructure-automation/istio.png",
+        "domain": "istio.io",
+        "alternatives": []
+      },
+      "type": "service-mesh",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "infrastructure-automation"
+    },
+    {
+      "id": "linkerd",
+      "name": "Linkerd",
+      "description": "Lightweight service mesh for Kubernetes that adds security, observability, and reliability to applications without requiring any code changes",
+      "website": "https://linkerd.io/",
+      "logo": {
+        "path": "/logos/devops/infrastructure-automation/linkerd.png",
+        "domain": "linkerd.io",
+        "alternatives": [
+          "buoyant.io"
+        ]
+      },
+      "type": "service-mesh",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "infrastructure-automation"
+    },
+    {
+      "id": "consul",
+      "name": "HashiCorp Consul",
+      "description": "Service networking platform providing service discovery, configuration, and segmentation functionality with a service mesh solution",
+      "website": "https://www.consul.io/",
+      "logo": {
+        "path": "/logos/devops/infrastructure-automation/consul.png",
+        "domain": "consul.io",
+        "alternatives": [
+          "hashicorp.com"
+        ]
+      },
+      "type": "service-mesh",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "infrastructure-automation"
+    }
+  ]
+}

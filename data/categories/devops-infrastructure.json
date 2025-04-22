@@ -1,22 +1,23 @@
 {
-    "id": "devops-infrastructure",
-    "title": "DevOps & Infrastructure",
-    "description": "DevOps & Infrastructure tools form the foundation of modern software development and IT operations. These technologies enable teams to automate infrastructure management, streamline code integration and deployment, monitor application performance, and collaborate effectively throughout the development lifecycle.",
-    "subcategories": [
-      "source-control",
-      "ci-cd",
-      "infrastructure-automation",
-      "monitoring",
-      "containers"
-    ],
-    "keyBenefits": [
-      "Faster Delivery: Automation reduces deployment time from weeks to minutes",
-      "Higher Quality: Automated testing catches issues before they reach production",
-      "Improved Collaboration: Shared tools and practices bridge development and operations",
-      "Increased Reliability: Infrastructure as code ensures consistent environments",
-      "Better Visibility: Monitoring provides insights into system performance and usage"
-    ],
-    "additionalSections": {
-      "DevOps Workflow Integration": "DevOps tools work together to create efficient software delivery pipelines:\n\n1. Developers collaborate using **Source Control** systems\n2. Changes trigger automated builds and tests through **CI/CD** pipelines\n3. Infrastructure is provisioned and configured via **Infrastructure Automation**\n4. Applications are deployed using **Containers** and orchestration platforms\n5. System health is tracked through **Monitoring & Observability** tools"
-    }
+  "id": "devops-infrastructure",
+  "title": "DevOps & Infrastructure",
+  "description": "DevOps & Infrastructure tools form the foundation of modern software development and IT operations. These technologies enable teams to automate infrastructure management, streamline code integration and deployment, monitor application performance, and collaborate effectively throughout the development lifecycle.",
+  "subcategories": [
+    "source-control",
+    "ci-cd",
+    "infrastructure-automation",
+    "monitoring",
+    "containers"
+  ],
+  "keyBenefits": [
+    "Faster Delivery: Automation reduces deployment time from weeks to minutes",
+    "Higher Quality: Automated testing catches issues before they reach production",
+    "Improved Collaboration: Shared tools and practices bridge development and operations",
+    "Increased Reliability: Infrastructure as code ensures consistent environments",
+    "Better Visibility: Monitoring provides insights into system performance and usage"
+  ],
+  "additionalSections": {
+    "DevOps Workflow Integration": "DevOps tools work together to create efficient software delivery pipelines:\n\n1. Developers collaborate using **Source Control** systems\n2. Changes trigger automated builds and tests through **CI/CD** pipelines\n3. Infrastructure is provisioned and configured via **Infrastructure Automation**\n4. Applications are deployed using **Containers** and orchestration platforms\n5. System health is tracked through **Monitoring & Observability** tools",
+    "Modern DevOps Practices": "Key practices that underpin successful DevOps implementations:\n\n1. **Infrastructure as Code**: Managing infrastructure through version-controlled code\n2. **Continuous Integration**: Automatically testing code changes\n3. **Continuous Delivery**: Automating the release process\n4. **Microservices Architecture**: Building modular, independently deployable services\n5. **Observability**: Comprehensive monitoring and logging\n6. **GitOps**: Using Git as the source of truth for declarative infrastructure"
   }
+}

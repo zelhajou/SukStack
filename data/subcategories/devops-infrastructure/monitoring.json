@@ -1,0 +1,72 @@
+{
+    "id": "monitoring",
+    "categoryId": "devops-infrastructure",
+    "title": "Monitoring & Observability",
+    "description": "Monitoring and observability tools provide insights into the health, performance, and behavior of applications and infrastructure, enabling teams to detect, diagnose, and resolve issues quickly.",
+    "sections": [
+      {
+        "id": "monitoring-platforms",
+        "title": "Monitoring Platforms",
+        "description": "Comprehensive platforms for monitoring infrastructure, applications, and services"
+      },
+      {
+        "id": "logging",
+        "title": "Logging Systems",
+        "description": "Tools for collecting, storing, and analyzing log data from applications and infrastructure"
+      },
+      {
+        "id": "apm",
+        "title": "Application Performance Monitoring",
+        "description": "Tools for tracking application performance, dependencies, and user experience"
+      },
+      {
+        "id": "tracing",
+        "title": "Distributed Tracing",
+        "description": "Systems for tracking requests as they flow through distributed applications"
+      },
+      {
+        "id": "alerting",
+        "title": "Alerting & Incident Management",
+        "description": "Tools for detecting issues and managing incident response"
+      }
+    ],
+    "bestPractices": [
+      "**Observability by Design**: Build applications with monitoring in mind from the start",
+      "**SLOs and SLIs**: Define clear service level objectives and indicators",
+      "**The Four Golden Signals**: Monitor latency, traffic, errors, and saturation",
+      "**Structured Logging**: Use consistent, machine-parseable log formats",
+      "**Correlation IDs**: Implement request tracing across services with correlation IDs",
+      "**Actionable Alerts**: Design alerts that provide clear context and remediation steps",
+      "**Dashboards**: Create intuitive dashboards for different personas (operators, developers, business)",
+      "**Alert Fatigue**: Minimize noise by eliminating redundant or non-actionable alerts"
+    ],
+    "integrations": [
+      "**CI/CD Pipelines**: Automatically deploy monitoring with application changes",
+      "**Infrastructure as Code**: Define monitoring configuration as code",
+      "**Incident Response**: Connect alerts to on-call rotations and incident management workflows",
+      "**Kubernetes**: Monitor container orchestration with specialized tools",
+      "**Service Mesh**: Leverage service mesh telemetry for deeper insights"
+    ],
+    "resources": [
+      {
+        "title": "Site Reliability Engineering: How Google Runs Production Systems",
+        "url": "https://sre.google/sre-book/table-of-contents/",
+        "type": "book"
+      },
+      {
+        "title": "Distributed Systems Observability",
+        "url": "https://www.oreilly.com/library/view/distributed-systems-observability/9781492033431/",
+        "type": "book"
+      },
+      {
+        "title": "Prometheus Documentation",
+        "url": "https://prometheus.io/docs/",
+        "type": "documentation"
+      },
+      {
+        "title": "OpenTelemetry Documentation",
+        "url": "https://opentelemetry.io/docs/",
+        "type": "documentation"
+      }
+    ]
+  }

@@ -1,0 +1,252 @@
+{
+  "tools": [
+    {
+      "id": "docker",
+      "name": "Docker",
+      "description": "Platform that enables developers to build, package, and distribute applications as containers, ensuring consistent behavior across different environments",
+      "website": "https://www.docker.com/",
+      "logo": {
+        "path": "/logos/devops/containers/docker.png",
+        "domain": "docker.com",
+        "alternatives": []
+      },
+      "type": "container-runtimes",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "containers"
+    },
+    {
+      "id": "containerd",
+      "name": "containerd",
+      "description": "Industry-standard container runtime that manages the complete container lifecycle, from image transfer to execution, serving as the core runtime for Docker and Kubernetes",
+      "website": "https://containerd.io/",
+      "logo": {
+        "path": "/logos/devops/containers/containerd.png",
+        "domain": "containerd.io",
+        "alternatives": [
+          "cncf.io"
+        ]
+      },
+      "type": "container-runtimes",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "containers"
+    },
+    {
+      "id": "cri-o",
+      "name": "CRI-O",
+      "description": "Lightweight container runtime specifically designed for Kubernetes, implementing the Kubernetes Container Runtime Interface (CRI)",
+      "website": "https://cri-o.io/",
+      "logo": {
+        "path": "/logos/devops/containers/cri-o.png",
+        "domain": "cri-o.io",
+        "alternatives": [
+          "kubernetes.io"
+        ]
+      },
+      "type": "container-runtimes",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "containers"
+    },
+    {
+      "id": "podman",
+      "name": "Podman",
+      "description": "Daemonless container engine for developing, managing, and running OCI containers that can be used as a drop-in replacement for Docker",
+      "website": "https://podman.io/",
+      "logo": {
+        "path": "/logos/devops/containers/podman.png",
+        "domain": "podman.io",
+        "alternatives": [
+          "redhat.com"
+        ]
+      },
+      "type": "container-runtimes",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "containers"
+    },
+    {
+      "id": "kubernetes",
+      "name": "Kubernetes",
+      "description": "Open-source platform for automating deployment, scaling, and management of containerized applications with declarative configuration and automation",
+      "website": "https://kubernetes.io/",
+      "logo": {
+        "path": "/logos/devops/containers/kubernetes.png",
+        "domain": "kubernetes.io",
+        "alternatives": [
+          "cncf.io"
+        ]
+      },
+      "type": "container-orchestration",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "containers"
+    },
+    {
+      "id": "openshift",
+      "name": "Red Hat OpenShift",
+      "description": "Enterprise Kubernetes platform that provides a consistent application platform to manage hybrid cloud and multicloud deployments",
+      "website": "https://www.redhat.com/en/technologies/cloud-computing/openshift",
+      "logo": {
+        "path": "/logos/devops/containers/openshift.png",
+        "domain": "redhat.com",
+        "alternatives": []
+      },
+      "type": "container-orchestration",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "containers"
+    },
+    {
+      "id": "rancher",
+      "name": "Rancher",
+      "description": "Complete software stack for teams adopting containers, addressing operational and security challenges of managing multiple Kubernetes clusters",
+      "website": "https://rancher.com/",
+      "logo": {
+        "path": "/logos/devops/containers/rancher.png",
+        "domain": "rancher.com",
+        "alternatives": [
+          "suse.com"
+        ]
+      },
+      "type": "container-orchestration",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "containers"
+    },
+    {
+      "id": "docker-swarm",
+      "name": "Docker Swarm",
+      "description": "Native clustering and orchestration solution for Docker, enabling creation and management of a cluster of Docker nodes as a single virtual system",
+      "website": "https://docs.docker.com/engine/swarm/",
+      "logo": {
+        "path": "/logos/devops/containers/docker-swarm.png",
+        "domain": "docker.com",
+        "alternatives": []
+      },
+      "type": "container-orchestration",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "containers"
+    },
+    {
+      "id": "nomad",
+      "name": "HashiCorp Nomad",
+      "description": "Simple and flexible orchestrator for deploying and managing containers and non-containerized applications across on-premises and cloud environments",
+      "website": "https://www.nomadproject.io/",
+      "logo": {
+        "path": "/logos/devops/containers/nomad.png",
+        "domain": "nomadproject.io",
+        "alternatives": [
+          "hashicorp.com"
+        ]
+      },
+      "type": "container-orchestration",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "containers"
+    },
+    {
+      "id": "docker-hub",
+      "name": "Docker Hub",
+      "description": "World's largest container image repository with many official and community images, providing a centralized resource for container image discovery and distribution",
+      "website": "https://hub.docker.com/",
+      "logo": {
+        "path": "/logos/devops/containers/docker-hub.png",
+        "domain": "hub.docker.com",
+        "alternatives": [
+          "docker.com"
+        ]
+      },
+      "type": "container-registries",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "containers"
+    },
+    {
+      "id": "harbor",
+      "name": "Harbor",
+      "description": "Open-source trusted cloud native registry project that stores, signs, and scans content, delivering compliance, performance, and interoperability",
+      "website": "https://goharbor.io/",
+      "logo": {
+        "path": "/logos/devops/containers/harbor.png",
+        "domain": "goharbor.io",
+        "alternatives": [
+          "cncf.io"
+        ]
+      },
+      "type": "container-registries",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "containers"
+    },
+    {
+      "id": "quay",
+      "name": "Quay",
+      "description": "Private container registry that secures and builds containers for reliable and scalable deployments with enterprise-grade security features",
+      "website": "https://quay.io/",
+      "logo": {
+        "path": "/logos/devops/containers/quay.png",
+        "domain": "quay.io",
+        "alternatives": [
+          "redhat.com"
+        ]
+      },
+      "type": "container-registries",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "containers"
+    },
+    {
+      "id": "helm",
+      "name": "Helm",
+      "description": "Package manager for Kubernetes that helps define, install, and upgrade complex Kubernetes applications with templates called charts",
+      "website": "https://helm.sh/",
+      "logo": {
+        "path": "/logos/devops/containers/helm.png",
+        "domain": "helm.sh",
+        "alternatives": [
+          "cncf.io"
+        ]
+      },
+      "type": "kubernetes-tools",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "containers"
+    },
+    {
+      "id": "kustomize",
+      "name": "Kustomize",
+      "description": "Kubernetes native configuration management tool that lets you customize untemplated YAML files without using templates",
+      "website": "https://kustomize.io/",
+      "logo": {
+        "path": "/logos/devops/containers/kustomize.png",
+        "domain": "kustomize.io",
+        "alternatives": [
+          "kubernetes.io"
+        ]
+      },
+      "type": "kubernetes-tools",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "containers"
+    },
+    {
+      "id": "operators",
+      "name": "Kubernetes Operators",
+      "description": "Software extensions to Kubernetes that make use of custom resources to manage applications and their components",
+      "website": "https://operatorhub.io/",
+      "logo": {
+        "path": "/logos/devops/containers/operators.png",
+        "domain": "operatorhub.io",
+        "alternatives": [
+          "kubernetes.io"
+        ]
+      },
+      "type": "kubernetes-tools",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "containers"
+    },
+    {
+      "id": "kubeflow",
+      "name": "Kubeflow",
+      "description": "Machine learning toolkit for Kubernetes that makes deploying and managing ML workflows on Kubernetes simple, portable, and scalable",
+      "website": "https://www.kubeflow.org/",
+      "logo": {
+        "path": "/logos/devops/containers/kubeflow.png",
+        "domain": "kubeflow.org",
+        "alternatives": []
+      },
+      "type": "kubernetes-tools",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "containers"
+    }
+  ]
+}

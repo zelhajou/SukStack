@@ -1,0 +1,72 @@
+{
+    "id": "hybrid-cloud",
+    "categoryId": "cloud",
+    "title": "Hybrid & Multi-Cloud Solutions",
+    "description": "Hybrid and multi-cloud solutions enable organizations to combine and integrate public clouds, private clouds, and on-premises infrastructure to create a flexible and optimized computing environment that meets diverse business requirements, security policies, and application needs.",
+    "sections": [
+      {
+        "id": "hybrid-platforms",
+        "title": "Hybrid Cloud Platforms",
+        "description": "Platforms that facilitate management across public and private cloud environments"
+      },
+      {
+        "id": "multi-cloud-management",
+        "title": "Multi-Cloud Management Tools",
+        "description": "Tools for managing resources across multiple cloud providers"
+      },
+      {
+        "id": "cloud-networking",
+        "title": "Cloud Networking Solutions",
+        "description": "Solutions that enable secure networking between cloud environments and on-premises infrastructure"
+      },
+      {
+        "id": "cloud-migration",
+        "title": "Cloud Migration Tools",
+        "description": "Tools for moving applications and data between different cloud environments"
+      }
+    ],
+    "bestPractices": [
+      "**Unified Management**: Implement consistent management tools and practices across environments",
+      "**Workload Placement**: Strategically place workloads based on performance, cost, and compliance requirements",
+      "**Data Integration**: Design data integration and synchronization between cloud environments",
+      "**Network Architecture**: Create secure, reliable network connectivity between environments",
+      "**Identity Management**: Implement unified identity and access management across clouds",
+      "**Cost Management**: Monitor and optimize costs across all environments",
+      "**Automation**: Automate deployment and management tasks for consistency",
+      "**Disaster Recovery**: Design cross-cloud disaster recovery strategies"
+    ],
+    "integrations": [
+      "**Identity Providers**: Integrate with corporate identity systems for unified access management",
+      "**Monitoring Tools**: Connect to centralized monitoring and observability platforms",
+      "**CI/CD Pipelines**: Integrate with DevOps tools for consistent deployments across environments",
+      "**Network Security**: Connect with security monitoring and policy enforcement tools",
+      "**Data Protection**: Integrate with backup and recovery solutions"
+    ],
+    "resources": [
+      {
+        "title": "Hybrid Cloud Reference Architecture",
+        "url": "https://www.ibm.com/cloud/architecture/architectures/hybrid-cloud",
+        "type": "documentation"
+      },
+      {
+        "title": "Multi-Cloud Strategy Guide",
+        "url": "https://www.hashicorp.com/resources/a-practitioners-guide-to-multi-cloud-adoption",
+        "type": "article"
+      },
+      {
+        "title": "Hybrid Cloud: The IT Leader's Guide",
+        "url": "https://enterprisersproject.com/hybrid-cloud",
+        "type": "article"
+      },
+      {
+        "title": "Cloud Native Applications: Architecture Patterns",
+        "url": "https://www.oreilly.com/library/view/cloud-native-infrastructure/9781491984291/",
+        "type": "book"
+      },
+      {
+        "title": "Azure Hybrid Cloud Documentation",
+        "url": "https://docs.microsoft.com/en-us/azure/hybrid/",
+        "type": "documentation"
+      }
+    ]
+  }

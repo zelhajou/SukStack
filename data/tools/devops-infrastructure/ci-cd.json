@@ -1,0 +1,232 @@
+{
+  "tools": [
+    {
+      "id": "jenkins",
+      "name": "Jenkins",
+      "description": "Open-source automation server that enables developers to build, test, and deploy their software with extensive plugin ecosystem and customization options",
+      "website": "https://jenkins.io",
+      "logo": {
+        "path": "/logos/devops/ci-cd/jenkins.png",
+        "domain": "jenkins.io",
+        "alternatives": []
+      },
+      "type": "ci-platforms",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "ci-cd"
+    },
+    {
+      "id": "github-actions",
+      "name": "GitHub Actions",
+      "description": "CI/CD solution built directly into GitHub that allows automating workflows in response to repository events like pushes, pull requests, and releases",
+      "website": "https://github.com/features/actions",
+      "logo": {
+        "path": "/logos/devops/ci-cd/github-actions.png",
+        "domain": "github.com",
+        "alternatives": []
+      },
+      "type": "ci-platforms",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "ci-cd"
+    },
+    {
+      "id": "gitlab-ci",
+      "name": "GitLab CI/CD",
+      "description": "Built-in CI/CD system in GitLab that supports continuous integration, delivery, and deployment with automatic pipeline configuration via .gitlab-ci.yml files",
+      "website": "https://docs.gitlab.com/ee/ci/",
+      "logo": {
+        "path": "/logos/devops/ci-cd/gitlab-ci.png",
+        "domain": "gitlab.com",
+        "alternatives": []
+      },
+      "type": "ci-platforms",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "ci-cd"
+    },
+    {
+      "id": "circleci",
+      "name": "CircleCI",
+      "description": "Cloud-based CI/CD platform that automates the software development process with fast testing and custom workflows for any language or framework",
+      "website": "https://circleci.com",
+      "logo": {
+        "path": "/logos/devops/ci-cd/circleci.png",
+        "domain": "circleci.com",
+        "alternatives": []
+      },
+      "type": "ci-platforms",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "ci-cd"
+    },
+    {
+      "id": "travis-ci",
+      "name": "Travis CI",
+      "description": "Hosted continuous integration service used to build and test software projects hosted on GitHub and Bitbucket with simple configuration and quick setup",
+      "website": "https://travis-ci.com",
+      "logo": {
+        "path": "/logos/devops/ci-cd/travis-ci.png",
+        "domain": "travis-ci.com",
+        "alternatives": []
+      },
+      "type": "ci-platforms",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "ci-cd"
+    },
+    {
+      "id": "azure-pipelines",
+      "name": "Azure Pipelines",
+      "description": "CI/CD service from Microsoft Azure that works with any language, platform, and cloud with support for containers and Kubernetes deployments",
+      "website": "https://azure.microsoft.com/en-us/services/devops/pipelines/",
+      "logo": {
+        "path": "/logos/devops/ci-cd/azure-pipelines.png",
+        "domain": "azure.microsoft.com",
+        "alternatives": []
+      },
+      "type": "ci-platforms",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "ci-cd"
+    },
+    {
+      "id": "teamcity",
+      "name": "TeamCity",
+      "description": "Powerful and user-friendly continuous integration server from JetBrains that supports various build tools and version control systems",
+      "website": "https://www.jetbrains.com/teamcity/",
+      "logo": {
+        "path": "/logos/devops/ci-cd/teamcity.png",
+        "domain": "jetbrains.com",
+        "alternatives": []
+      },
+      "type": "ci-platforms",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "ci-cd"
+    },
+    {
+      "id": "maven",
+      "name": "Apache Maven",
+      "description": "Build automation tool primarily for Java projects that describes project structure, dependencies, and build process in XML",
+      "website": "https://maven.apache.org/",
+      "logo": {
+        "path": "/logos/devops/ci-cd/maven.png",
+        "domain": "maven.apache.org",
+        "alternatives": [
+          "apache.org"
+        ]
+      },
+      "type": "build-tools",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "ci-cd"
+    },
+    {
+      "id": "gradle",
+      "name": "Gradle",
+      "description": "Build automation system that uses Groovy or Kotlin DSL instead of XML, making build scripts shorter and more readable with incremental builds",
+      "website": "https://gradle.org/",
+      "logo": {
+        "path": "/logos/devops/ci-cd/gradle.png",
+        "domain": "gradle.org",
+        "alternatives": []
+      },
+      "type": "build-tools",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "ci-cd"
+    },
+    {
+      "id": "npm",
+      "name": "npm",
+      "description": "Package manager for JavaScript that helps manage dependencies and run scripts for Node.js applications",
+      "website": "https://www.npmjs.com/",
+      "logo": {
+        "path": "/logos/devops/ci-cd/npm.png",
+        "domain": "npmjs.com",
+        "alternatives": []
+      },
+      "type": "build-tools",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "ci-cd"
+    },
+    {
+      "id": "argocd",
+      "name": "Argo CD",
+      "description": "Declarative GitOps continuous delivery tool for Kubernetes that automates the deployment of applications following the GitOps principles",
+      "website": "https://argoproj.github.io/argo-cd/",
+      "logo": {
+        "path": "/logos/devops/ci-cd/argocd.png",
+        "domain": "argoproj.github.io",
+        "alternatives": []
+      },
+      "type": "deployment-tools",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "ci-cd"
+    },
+    {
+      "id": "spinnaker",
+      "name": "Spinnaker",
+      "description": "Open-source, multi-cloud continuous delivery platform built by Netflix and Google for releasing software changes with confidence",
+      "website": "https://spinnaker.io/",
+      "logo": {
+        "path": "/logos/devops/ci-cd/spinnaker.png",
+        "domain": "spinnaker.io",
+        "alternatives": []
+      },
+      "type": "deployment-tools",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "ci-cd"
+    },
+    {
+      "id": "flagger",
+      "name": "Flagger",
+      "description": "Progressive delivery tool that automates canary releases and A/B testing for Kubernetes applications",
+      "website": "https://flagger.app/",
+      "logo": {
+        "path": "/logos/devops/ci-cd/flagger.png",
+        "domain": "flagger.app",
+        "alternatives": [
+          "weave.works"
+        ]
+      },
+      "type": "deployment-tools",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "ci-cd"
+    },
+    {
+      "id": "selenium",
+      "name": "Selenium",
+      "description": "Framework for automating web browsers used for testing web applications across various browsers and platforms",
+      "website": "https://www.selenium.dev/",
+      "logo": {
+        "path": "/logos/devops/ci-cd/selenium.png",
+        "domain": "selenium.dev",
+        "alternatives": []
+      },
+      "type": "testing-frameworks",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "ci-cd"
+    },
+    {
+      "id": "jest",
+      "name": "Jest",
+      "description": "JavaScript testing framework from Facebook with a focus on simplicity, works with TypeScript, Node, React, Angular, and more",
+      "website": "https://jestjs.io/",
+      "logo": {
+        "path": "/logos/devops/ci-cd/jest.png",
+        "domain": "jestjs.io",
+        "alternatives": []
+      },
+      "type": "testing-frameworks",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "ci-cd"
+    },
+    {
+      "id": "junit",
+      "name": "JUnit",
+      "description": "Simple framework for writing and running automated tests in Java with annotations to identify test methods",
+      "website": "https://junit.org/",
+      "logo": {
+        "path": "/logos/devops/ci-cd/junit.png",
+        "domain": "junit.org",
+        "alternatives": []
+      },
+      "type": "testing-frameworks",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "ci-cd"
+    }
+  ]
+}

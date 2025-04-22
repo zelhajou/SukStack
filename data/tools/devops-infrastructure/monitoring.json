@@ -1,0 +1,256 @@
+{
+  "tools": [
+    {
+      "id": "prometheus",
+      "name": "Prometheus",
+      "description": "Open-source monitoring and alerting toolkit designed for reliability and scalability, with a powerful query language and time-series database",
+      "website": "https://prometheus.io/",
+      "logo": {
+        "path": "/logos/devops/monitoring/prometheus.png",
+        "domain": "prometheus.io",
+        "alternatives": [
+          "cncf.io"
+        ]
+      },
+      "type": "monitoring-platforms",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "monitoring"
+    },
+    {
+      "id": "grafana",
+      "name": "Grafana",
+      "description": "Open-source platform for monitoring and observability that allows querying, visualizing and alerting on metrics from various data sources",
+      "website": "https://grafana.com/",
+      "logo": {
+        "path": "/logos/devops/monitoring/grafana.png",
+        "domain": "grafana.com",
+        "alternatives": []
+      },
+      "type": "monitoring-platforms",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "monitoring"
+    },
+    {
+      "id": "datadog",
+      "name": "Datadog",
+      "description": "Cloud-scale monitoring and security platform that provides observability of servers, containers, databases, and applications with powerful visualization and analytics",
+      "website": "https://www.datadoghq.com/",
+      "logo": {
+        "path": "/logos/devops/monitoring/datadog.png",
+        "domain": "datadoghq.com",
+        "alternatives": []
+      },
+      "type": "monitoring-platforms",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "monitoring"
+    },
+    {
+      "id": "new-relic",
+      "name": "New Relic",
+      "description": "Observability platform that helps engineers plan, build, deploy, and run software by gathering telemetry data and providing actionable insights",
+      "website": "https://newrelic.com/",
+      "logo": {
+        "path": "/logos/devops/monitoring/new-relic.png",
+        "domain": "newrelic.com",
+        "alternatives": []
+      },
+      "type": "monitoring-platforms",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "monitoring"
+    },
+    {
+      "id": "nagios",
+      "name": "Nagios",
+      "description": "Industry-standard IT infrastructure monitoring tool that provides comprehensive monitoring of hosts, services, and networking components",
+      "website": "https://www.nagios.org/",
+      "logo": {
+        "path": "/logos/devops/monitoring/nagios.png",
+        "domain": "nagios.org",
+        "alternatives": [
+          "nagios.com"
+        ]
+      },
+      "type": "monitoring-platforms",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "monitoring"
+    },
+    {
+      "id": "zabbix",
+      "name": "Zabbix",
+      "description": "Enterprise-class open-source monitoring solution for networks and applications, designed to monitor and track the status of various IT components",
+      "website": "https://www.zabbix.com/",
+      "logo": {
+        "path": "/logos/devops/monitoring/zabbix.png",
+        "domain": "zabbix.com",
+        "alternatives": []
+      },
+      "type": "monitoring-platforms",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "monitoring"
+    },
+    {
+      "id": "elasticsearch",
+      "name": "Elasticsearch",
+      "description": "Distributed, RESTful search and analytics engine capable of addressing a growing number of use cases including log analytics and application monitoring",
+      "website": "https://www.elastic.co/elasticsearch/",
+      "logo": {
+        "path": "/logos/devops/monitoring/elasticsearch.png",
+        "domain": "elastic.co",
+        "alternatives": []
+      },
+      "type": "logging",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "monitoring"
+    },
+    {
+      "id": "logstash",
+      "name": "Logstash",
+      "description": "Server-side data processing pipeline that ingests data from multiple sources, transforms it, and sends it to a storage system like Elasticsearch",
+      "website": "https://www.elastic.co/logstash/",
+      "logo": {
+        "path": "/logos/devops/monitoring/logstash.png",
+        "domain": "elastic.co",
+        "alternatives": []
+      },
+      "type": "logging",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "monitoring"
+    },
+    {
+      "id": "kibana",
+      "name": "Kibana",
+      "description": "Data visualization and exploration tool used for log and time-series analytics, application monitoring, and operational intelligence use cases",
+      "website": "https://www.elastic.co/kibana/",
+      "logo": {
+        "path": "/logos/devops/monitoring/kibana.png",
+        "domain": "elastic.co",
+        "alternatives": []
+      },
+      "type": "logging",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "monitoring"
+    },
+    {
+      "id": "graylog",
+      "name": "Graylog",
+      "description": "Log management platform that collects, indexes, and analyzes machine data from IT infrastructures and applications in one centralized location",
+      "website": "https://www.graylog.org/",
+      "logo": {
+        "path": "/logos/devops/monitoring/graylog.png",
+        "domain": "graylog.org",
+        "alternatives": []
+      },
+      "type": "logging",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "monitoring"
+    },
+    {
+      "id": "fluentd",
+      "name": "Fluentd",
+      "description": "Open-source data collector for unified logging that allows you to collect, process, and forward data to various outputs",
+      "website": "https://www.fluentd.org/",
+      "logo": {
+        "path": "/logos/devops/monitoring/fluentd.png",
+        "domain": "fluentd.org",
+        "alternatives": [
+          "cncf.io"
+        ]
+      },
+      "type": "logging",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "monitoring"
+    },
+    {
+      "id": "dynatrace",
+      "name": "Dynatrace",
+      "description": "AI-powered, full stack, automated performance management solution that provides actionable insights into the performance of applications",
+      "website": "https://www.dynatrace.com/",
+      "logo": {
+        "path": "/logos/devops/monitoring/dynatrace.png",
+        "domain": "dynatrace.com",
+        "alternatives": []
+      },
+      "type": "apm",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "monitoring"
+    },
+    {
+      "id": "appdynamics",
+      "name": "AppDynamics",
+      "description": "Application performance management solution that provides end-to-end visibility into application performance and user experience",
+      "website": "https://www.appdynamics.com/",
+      "logo": {
+        "path": "/logos/devops/monitoring/appdynamics.png",
+        "domain": "appdynamics.com",
+        "alternatives": [
+          "cisco.com"
+        ]
+      },
+      "type": "apm",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "monitoring"
+    },
+    {
+      "id": "jaeger",
+      "name": "Jaeger",
+      "description": "Open-source, end-to-end distributed tracing system that helps monitor and troubleshoot complex, microservices-based architectures",
+      "website": "https://www.jaegertracing.io/",
+      "logo": {
+        "path": "/logos/devops/monitoring/jaeger.png",
+        "domain": "jaegertracing.io",
+        "alternatives": [
+          "cncf.io"
+        ]
+      },
+      "type": "tracing",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "monitoring"
+    },
+    {
+      "id": "zipkin",
+      "name": "Zipkin",
+      "description": "Distributed tracing system that helps gather timing data needed to troubleshoot latency problems in service architectures",
+      "website": "https://zipkin.io/",
+      "logo": {
+        "path": "/logos/devops/monitoring/zipkin.png",
+        "domain": "zipkin.io",
+        "alternatives": [
+          "openzipkin.io"
+        ]
+      },
+      "type": "tracing",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "monitoring"
+    },
+    {
+      "id": "pagerduty",
+      "name": "PagerDuty",
+      "description": "Digital operations management platform for incident response, focusing on integrating with monitoring tools to provide alerting and on-call management",
+      "website": "https://www.pagerduty.com/",
+      "logo": {
+        "path": "/logos/devops/monitoring/pagerduty.png",
+        "domain": "pagerduty.com",
+        "alternatives": []
+      },
+      "type": "alerting",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "monitoring"
+    },
+    {
+      "id": "opsgenie",
+      "name": "Opsgenie",
+      "description": "Modern incident management solution for operating always-on services, enabling teams to coordinate the rapid response to issues",
+      "website": "https://www.atlassian.com/software/opsgenie",
+      "logo": {
+        "path": "/logos/devops/monitoring/opsgenie.png",
+        "domain": "atlassian.com",
+        "alternatives": [
+          "opsgenie.com"
+        ]
+      },
+      "type": "alerting",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "monitoring"
+    }
+  ]
+}

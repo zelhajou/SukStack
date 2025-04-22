@@ -1,66 +1,66 @@
 {
-    "id": "source-control",
-    "categoryId": "devops-infrastructure",
-    "title": "Source Control Management Systems",
-    "description": "Essential tools for tracking and managing changes to code repositories. Source control systems enable developers to collaborate efficiently, maintain code history, and manage releases.",
-    "sections": [
-      {
-        "id": "git-platform",
-        "title": "Git Repository Hosting Platforms",
-        "description": "Services that host Git repositories with additional collaboration features"
-      },
-      {
-        "id": "distributed-vcs",
-        "title": "Distributed Version Control Systems",
-        "description": "Systems that give each developer a complete copy of the repository"
-      },
-      {
-        "id": "centralized-vcs",
-        "title": "Centralized Version Control Systems",
-        "description": "Traditional systems with a single central repository"
-      },
-      {
-        "id": "specialized-vcs",
-        "title": "Specialized Version Control Tools",
-        "description": "Solutions for specific requirements or industries"
-      }
-    ],
-    "bestPractices": [
-      "**Commit frequently** with clear, descriptive messages that explain why changes were made",
-      "**Branch strategically** with a consistent workflow like Gitflow or trunk-based development",
-      "**Review code** through pull/merge requests before integrating into shared branches",
-      "**Automate testing** with pre-commit hooks or CI pipelines to maintain code quality",
-      "**Tag releases** to create clear markers for deployed versions",
-      "**Maintain a clean history** through techniques like rebasing or squashing when appropriate",
-      "**Document conventions** for your team regarding branching, commit messages, and workflow"
-    ],
-    "integrations": [
-      "**Continuous Integration** automatically builds and tests code on commit",
-      "**Continuous Delivery** deploys validated code to staging environments",
-      "**Infrastructure as Code** tracks infrastructure definitions alongside application code",
-      "**Security Scanning** identifies vulnerabilities during the commit process",
-      "**Code Quality Tools** enforce standards and catch potential issues early"
-    ],
-    "resources": [
-      {
-        "title": "Git Documentation",
-        "url": "https://git-scm.com/doc",
-        "type": "documentation"
-      },
-      {
-        "title": "Comparing Version Control Systems",
-        "url": "https://www.atlassian.com/git/tutorials/what-is-version-control",
-        "type": "article"
-      },
-      {
-        "title": "Git Branching Strategies",
-        "url": "https://nvie.com/posts/a-successful-git-branching-model/",
-        "type": "article"
-      },
-      {
-        "title": "Pro Git Book",
-        "url": "https://git-scm.com/book/en/v2",
-        "type": "book"
-      }
-    ]
-  }
+  "id": "source-control",
+  "categoryId": "devops-infrastructure",
+  "title": "Source Control Management Systems",
+  "description": "Essential tools for tracking and managing changes to code repositories. Source control systems enable developers to collaborate efficiently, maintain code history, and manage releases.",
+  "sections": [
+    {
+      "id": "git-platform",
+      "title": "Git Repository Hosting Platforms",
+      "description": "Services that host Git repositories with additional collaboration features"
+    },
+    {
+      "id": "distributed-vcs",
+      "title": "Distributed Version Control Systems",
+      "description": "Systems that give each developer a complete copy of the repository"
+    },
+    {
+      "id": "centralized-vcs",
+      "title": "Centralized Version Control Systems",
+      "description": "Traditional systems with a single central repository"
+    },
+    {
+      "id": "specialized-vcs",
+      "title": "Specialized Version Control Tools",
+      "description": "Solutions for specific requirements or industries"
+    }
+  ],
+  "bestPractices": [
+    "**Commit frequently** with clear, descriptive messages that explain why changes were made",
+    "**Branch strategically** with a consistent workflow like Gitflow or trunk-based development",
+    "**Review code** through pull/merge requests before integrating into shared branches",
+    "**Automate testing** with pre-commit hooks or CI pipelines to maintain code quality",
+    "**Tag releases** to create clear markers for deployed versions",
+    "**Maintain a clean history** through techniques like rebasing or squashing when appropriate",
+    "**Document conventions** for your team regarding branching, commit messages, and workflow"
+  ],
+  "integrations": [
+    "**Continuous Integration** automatically builds and tests code on commit",
+    "**Continuous Delivery** deploys validated code to staging environments",
+    "**Infrastructure as Code** tracks infrastructure definitions alongside application code",
+    "**Security Scanning** identifies vulnerabilities during the commit process",
+    "**Code Quality Tools** enforce standards and catch potential issues early"
+  ],
+  "resources": [
+    {
+      "title": "Git Documentation",
+      "url": "https://git-scm.com/doc",
+      "type": "documentation"
+    },
+    {
+      "title": "Comparing Version Control Systems",
+      "url": "https://www.atlassian.com/git/tutorials/what-is-version-control",
+      "type": "article"
+    },
+    {
+      "title": "Git Branching Strategies",
+      "url": "https://nvie.com/posts/a-successful-git-branching-model/",
+      "type": "article"
+    },
+    {
+      "title": "Pro Git Book",
+      "url": "https://git-scm.com/book/en/v2",
+      "type": "book"
+    }
+  ]
+}

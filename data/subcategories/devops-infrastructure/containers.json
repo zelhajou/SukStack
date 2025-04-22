@@ -1,0 +1,67 @@
+{
+    "id": "containers",
+    "categoryId": "devops-infrastructure",
+    "title": "Containers & Orchestration",
+    "description": "Container technologies enable applications to run consistently across different environments by packaging code and dependencies together, while orchestration tools manage containerized applications at scale.",
+    "sections": [
+      {
+        "id": "container-runtimes",
+        "title": "Container Runtimes & Engines",
+        "description": "Software for running and managing containers on a host system"
+      },
+      {
+        "id": "container-orchestration",
+        "title": "Container Orchestration Platforms",
+        "description": "Platforms for automating deployment, scaling, and management of containerized applications"
+      },
+      {
+        "id": "container-registries",
+        "title": "Container Registries",
+        "description": "Services for storing and distributing container images"
+      },
+      {
+        "id": "kubernetes-tools",
+        "title": "Kubernetes Ecosystem Tools",
+        "description": "Tools and extensions that enhance Kubernetes functionality"
+      }
+    ],
+    "bestPractices": [
+      "**Immutable Containers**: Treat containers as immutable and never modify running containers",
+      "**Minimal Base Images**: Use minimal, purpose-built base images to reduce attack surface",
+      "**Image Scanning**: Scan container images for vulnerabilities before deployment",
+      "**Resource Limits**: Set appropriate CPU and memory limits for containers",
+      "**Health Checks**: Implement readiness and liveness probes for containerized applications",
+      "**Declarative Configuration**: Define container orchestration using declarative configurations",
+      "**Secrets Management**: Securely handle sensitive information in containerized environments",
+      "**Network Policies**: Implement network segmentation for containerized applications"
+    ],
+    "integrations": [
+      "**CI/CD Pipelines**: Automate container image building and deployment",
+      "**Infrastructure as Code**: Define container infrastructure using code",
+      "**Monitoring Tools**: Implement container-aware monitoring and observability",
+      "**Security Scanning**: Scan images and running containers for vulnerabilities",
+      "**Service Mesh**: Enhance container networking with service mesh capabilities"
+    ],
+    "resources": [
+      {
+        "title": "Docker Documentation",
+        "url": "https://docs.docker.com/",
+        "type": "documentation"
+      },
+      {
+        "title": "Kubernetes Documentation",
+        "url": "https://kubernetes.io/docs/home/",
+        "type": "documentation"
+      },
+      {
+        "title": "Container Security: Fundamental Technology Concepts that Protect Containerized Applications",
+        "url": "https://www.oreilly.com/library/view/container-security/9781492056690/",
+        "type": "book"
+      },
+      {
+        "title": "Kubernetes Patterns: Reusable Elements for Designing Cloud-Native Applications",
+        "url": "https://www.redhat.com/en/resources/oreilly-kubernetes-patterns-cloud-native-apps",
+        "type": "book"
+      }
+    ]
+  }

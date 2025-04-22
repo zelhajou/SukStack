@@ -1,0 +1,66 @@
+{
+    "id": "infrastructure-automation",
+    "categoryId": "devops-infrastructure",
+    "title": "Infrastructure Automation",
+    "description": "Infrastructure automation tools enable teams to define, deploy, and manage infrastructure using code instead of manual processes, ensuring consistency and scalability while reducing human error.",
+    "sections": [
+      {
+        "id": "iac-tools",
+        "title": "Infrastructure as Code (IaC) Tools",
+        "description": "Tools for defining and provisioning infrastructure using declarative configurations"
+      },
+      {
+        "id": "config-management",
+        "title": "Configuration Management",
+        "description": "Tools for automating the configuration of servers and infrastructure resources"
+      },
+      {
+        "id": "cloud-orchestration",
+        "title": "Cloud Orchestration",
+        "description": "Platforms for orchestrating complex cloud infrastructure deployments"
+      },
+      {
+        "id": "service-mesh",
+        "title": "Service Mesh",
+        "description": "Infrastructure layer for handling service-to-service communication for microservices"
+      }
+    ],
+    "bestPractices": [
+      "**Infrastructure as Code (IaC)**: Define all infrastructure using code to ensure consistency and reproducibility",
+      "**Version Control**: Store infrastructure code in version control systems for tracking changes",
+      "**Immutable Infrastructure**: Deploy new instances rather than modifying existing ones",
+      "**Environment Parity**: Keep development, staging, and production environments as similar as possible",
+      "**Modular Design**: Create reusable modules for common infrastructure patterns",
+      "**Automated Testing**: Test infrastructure code before applying changes",
+      "**Least Privilege**: Use role-based access control for infrastructure management"
+    ],
+    "integrations": [
+      "**CI/CD Pipelines**: Automate infrastructure deployments via continuous integration/delivery pipelines",
+      "**Container Platforms**: Provision and configure Kubernetes clusters and orchestration systems",
+      "**Monitoring Tools**: Set up monitoring and observability automatically for newly provisioned resources",
+      "**Source Control**: Track infrastructure changes alongside application code",
+      "**Secret Management**: Securely store and distribute credentials and secrets"
+    ],
+    "resources": [
+      {
+        "title": "Infrastructure as Code: Managing Servers in the Cloud",
+        "url": "https://www.oreilly.com/library/view/infrastructure-as-code/9781098114664/",
+        "type": "book"
+      },
+      {
+        "title": "Terraform: Up & Running",
+        "url": "https://www.terraformupandrunning.com/",
+        "type": "book"
+      },
+      {
+        "title": "Continuous Delivery with Spinnaker",
+        "url": "https://spinnaker.io/docs/",
+        "type": "documentation"
+      },
+      {
+        "title": "AWS Well-Architected Framework",
+        "url": "https://aws.amazon.com/architecture/well-architected/",
+        "type": "documentation"
+      }
+    ]
+  }

@@ -1,0 +1,296 @@
+{
+  "tools": [
+    {
+      "id": "azure-arc",
+      "name": "Azure Arc",
+      "description": "Microsoft's hybrid cloud platform that extends Azure management and services to any infrastructure, including on-premises, multi-cloud, and edge environments",
+      "website": "https://azure.microsoft.com/en-us/services/azure-arc/",
+      "logo": {
+        "path": "/logos/cloud/hybrid-cloud/azure-arc.png",
+        "domain": "azure.microsoft.com",
+        "alternatives": [
+          "microsoft.com"
+        ]
+      },
+      "type": "hybrid-platforms",
+      "categoryId": "cloud",
+      "subcategoryId": "hybrid-cloud"
+    },
+    {
+      "id": "google-anthos",
+      "name": "Google Anthos",
+      "description": "Platform that enables consistent development and operations across hybrid and multi-cloud environments including on-premises, Google Cloud, and other public clouds",
+      "website": "https://cloud.google.com/anthos",
+      "logo": {
+        "path": "/logos/cloud/hybrid-cloud/google-anthos.png",
+        "domain": "cloud.google.com",
+        "alternatives": [
+          "google.com"
+        ]
+      },
+      "type": "hybrid-platforms",
+      "categoryId": "cloud",
+      "subcategoryId": "hybrid-cloud"
+    },
+    {
+      "id": "aws-outposts",
+      "name": "AWS Outposts",
+      "description": "Fully managed service that extends AWS infrastructure, services, APIs, and tools to virtually any datacenter, co-location space, or on-premises facility",
+      "website": "https://aws.amazon.com/outposts/",
+      "logo": {
+        "path": "/logos/cloud/hybrid-cloud/aws-outposts.png",
+        "domain": "aws.amazon.com",
+        "alternatives": [
+          "amazon.com"
+        ]
+      },
+      "type": "hybrid-platforms",
+      "categoryId": "cloud",
+      "subcategoryId": "hybrid-cloud"
+    },
+    {
+      "id": "vmware-cloud",
+      "name": "VMware Cloud",
+      "description": "Platform that delivers consistent infrastructure and operations across private, public, and edge cloud environments",
+      "website": "https://www.vmware.com/cloud-solutions.html",
+      "logo": {
+        "path": "/logos/cloud/hybrid-cloud/vmware-cloud.png",
+        "domain": "vmware.com",
+        "alternatives": []
+      },
+      "type": "hybrid-platforms",
+      "categoryId": "cloud",
+      "subcategoryId": "hybrid-cloud"
+    },
+    {
+      "id": "ibm-cloud-satellite",
+      "name": "IBM Cloud Satellite",
+      "description": "Distributed cloud solution that enables running IBM Cloud services anywhere—on-premises, at the edge, or in other public clouds",
+      "website": "https://www.ibm.com/cloud/satellite",
+      "logo": {
+        "path": "/logos/cloud/hybrid-cloud/ibm-cloud-satellite.png",
+        "domain": "ibm.com",
+        "alternatives": []
+      },
+      "type": "hybrid-platforms",
+      "categoryId": "cloud",
+      "subcategoryId": "hybrid-cloud"
+    },
+    {
+      "id": "terraform",
+      "name": "HashiCorp Terraform",
+      "description": "Infrastructure as code tool that enables building, changing, and versioning infrastructure safely and efficiently across multiple cloud providers",
+      "website": "https://www.terraform.io/",
+      "logo": {
+        "path": "/logos/cloud/hybrid-cloud/terraform.png",
+        "domain": "terraform.io",
+        "alternatives": [
+          "hashicorp.com"
+        ]
+      },
+      "type": "multi-cloud-management",
+      "categoryId": "cloud",
+      "subcategoryId": "hybrid-cloud"
+    },
+    {
+      "id": "kubernetes",
+      "name": "Kubernetes",
+      "description": "Open-source container orchestration platform that automates deployment, scaling, and management of containerized applications across diverse environments",
+      "website": "https://kubernetes.io/",
+      "logo": {
+        "path": "/logos/cloud/hybrid-cloud/kubernetes.png",
+        "domain": "kubernetes.io",
+        "alternatives": [
+          "cncf.io"
+        ]
+      },
+      "type": "multi-cloud-management",
+      "categoryId": "cloud",
+      "subcategoryId": "hybrid-cloud"
+    },
+    {
+      "id": "cloudformation",
+      "name": "AWS CloudFormation",
+      "description": "Service for modeling and setting up AWS resources that can be used as part of a multi-cloud strategy with other tools",
+      "website": "https://aws.amazon.com/cloudformation/",
+      "logo": {
+        "path": "/logos/cloud/hybrid-cloud/cloudformation.png",
+        "domain": "aws.amazon.com",
+        "alternatives": [
+          "amazon.com"
+        ]
+      },
+      "type": "multi-cloud-management",
+      "categoryId": "cloud",
+      "subcategoryId": "hybrid-cloud"
+    },
+    {
+      "id": "morpheus",
+      "name": "Morpheus",
+      "description": "Multi-cloud management platform that enables self-service provisioning, governance, and automation across hybrid cloud environments",
+      "website": "https://www.morpheusdata.com/",
+      "logo": {
+        "path": "/logos/cloud/hybrid-cloud/morpheus.png",
+        "domain": "morpheusdata.com",
+        "alternatives": []
+      },
+      "type": "multi-cloud-management",
+      "categoryId": "cloud",
+      "subcategoryId": "hybrid-cloud"
+    },
+    {
+      "id": "flexera",
+      "name": "Flexera",
+      "description": "Cloud management platform that provides visibility, optimization, and governance for hybrid and multi-cloud environments",
+      "website": "https://www.flexera.com/",
+      "logo": {
+        "path": "/logos/cloud/hybrid-cloud/flexera.png",
+        "domain": "flexera.com",
+        "alternatives": []
+      },
+      "type": "multi-cloud-management",
+      "categoryId": "cloud",
+      "subcategoryId": "hybrid-cloud"
+    },
+    {
+      "id": "aws-direct-connect",
+      "name": "AWS Direct Connect",
+      "description": "Service that provides dedicated network connections from on-premises data centers to AWS, bypassing the public internet for improved performance and security",
+      "website": "https://aws.amazon.com/directconnect/",
+      "logo": {
+        "path": "/logos/cloud/hybrid-cloud/aws-direct-connect.png",
+        "domain": "aws.amazon.com",
+        "alternatives": [
+          "amazon.com"
+        ]
+      },
+      "type": "cloud-networking",
+      "categoryId": "cloud",
+      "subcategoryId": "hybrid-cloud"
+    },
+    {
+      "id": "azure-expressroute",
+      "name": "Azure ExpressRoute",
+      "description": "Service that creates private connections between Azure data centers and on-premises infrastructure or colocation environments",
+      "website": "https://azure.microsoft.com/en-us/services/expressroute/",
+      "logo": {
+        "path": "/logos/cloud/hybrid-cloud/azure-expressroute.png",
+        "domain": "azure.microsoft.com",
+        "alternatives": [
+          "microsoft.com"
+        ]
+      },
+      "type": "cloud-networking",
+      "categoryId": "cloud",
+      "subcategoryId": "hybrid-cloud"
+    },
+    {
+      "id": "google-cloud-interconnect",
+      "name": "Google Cloud Interconnect",
+      "description": "Service providing direct physical connections between your on-premises network and Google's network for high-bandwidth, reliable connectivity",
+      "website": "https://cloud.google.com/network-connectivity/docs/interconnect",
+      "logo": {
+        "path": "/logos/cloud/hybrid-cloud/google-cloud-interconnect.png",
+        "domain": "cloud.google.com",
+        "alternatives": [
+          "google.com"
+        ]
+      },
+      "type": "cloud-networking",
+      "categoryId": "cloud",
+      "subcategoryId": "hybrid-cloud"
+    },
+    {
+      "id": "cisco-cloud-center",
+      "name": "Cisco CloudCenter",
+      "description": "Multi-cloud management solution that securely provisions infrastructure resources and deploys applications across different cloud environments",
+      "website": "https://www.cisco.com/c/en/us/products/cloud-systems-management/cloudcenter-suite/index.html",
+      "logo": {
+        "path": "/logos/cloud/hybrid-cloud/cisco-cloud-center.png",
+        "domain": "cisco.com",
+        "alternatives": []
+      },
+      "type": "cloud-networking",
+      "categoryId": "cloud",
+      "subcategoryId": "hybrid-cloud"
+    },
+    {
+      "id": "aws-migration-hub",
+      "name": "AWS Migration Hub",
+      "description": "Service that provides a single location to track migration tasks across multiple AWS and partner solutions",
+      "website": "https://aws.amazon.com/migration-hub/",
+      "logo": {
+        "path": "/logos/cloud/hybrid-cloud/aws-migration-hub.png",
+        "domain": "aws.amazon.com",
+        "alternatives": [
+          "amazon.com"
+        ]
+      },
+      "type": "cloud-migration",
+      "categoryId": "cloud",
+      "subcategoryId": "hybrid-cloud"
+    },
+    {
+      "id": "azure-migrate",
+      "name": "Azure Migrate",
+      "description": "Service that provides a unified platform to assess and migrate on-premises servers, infrastructure, applications, and data to Azure",
+      "website": "https://azure.microsoft.com/en-us/services/azure-migrate/",
+      "logo": {
+        "path": "/logos/cloud/hybrid-cloud/azure-migrate.png",
+        "domain": "azure.microsoft.com",
+        "alternatives": [
+          "microsoft.com"
+        ]
+      },
+      "type": "cloud-migration",
+      "categoryId": "cloud",
+      "subcategoryId": "hybrid-cloud"
+    },
+    {
+      "id": "cloud-endure",
+      "name": "CloudEndure Migration",
+      "description": "Service that simplifies, expedites, and automates large-scale migrations from physical, virtual, or cloud infrastructure to AWS",
+      "website": "https://aws.amazon.com/cloudendure-migration/",
+      "logo": {
+        "path": "/logos/cloud/hybrid-cloud/cloud-endure.png",
+        "domain": "aws.amazon.com",
+        "alternatives": [
+          "cloudendure.com"
+        ]
+      },
+      "type": "cloud-migration",
+      "categoryId": "cloud",
+      "subcategoryId": "hybrid-cloud"
+    },
+    {
+      "id": "vmware-hcx",
+      "name": "VMware HCX",
+      "description": "Application mobility platform designed for simplifying application migration, workload rebalancing, and business continuity across data centers and clouds",
+      "website": "https://www.vmware.com/products/hcx.html",
+      "logo": {
+        "path": "/logos/cloud/hybrid-cloud/vmware-hcx.png",
+        "domain": "vmware.com",
+        "alternatives": []
+      },
+      "type": "cloud-migration",
+      "categoryId": "cloud",
+      "subcategoryId": "hybrid-cloud"
+    },
+    {
+      "id": "turbonomic",
+      "name": "Turbonomic",
+      "description": "Application resource management solution that optimizes workload performance, compliance, and cost across hybrid and multi-cloud environments",
+      "website": "https://www.turbonomic.com/",
+      "logo": {
+        "path": "/logos/cloud/hybrid-cloud/turbonomic.png",
+        "domain": "turbonomic.com",
+        "alternatives": [
+          "ibm.com"
+        ]
+      },
+      "type": "cloud-migration",
+      "categoryId": "cloud",
+      "subcategoryId": "hybrid-cloud"
+    }
+  ]
+}

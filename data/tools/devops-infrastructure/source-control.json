@@ -1,0 +1,156 @@
+{
+  "tools": [
+    {
+      "id": "github",
+      "name": "GitHub",
+      "description": "Web-based hosting service for Git repositories offering collaboration features like pull requests, actions for CI/CD, project boards, and security scanning",
+      "website": "https://github.com",
+      "logo": {
+        "path": "/logos/devops/source-control/github.png",
+        "domain": "github.com",
+        "alternatives": [
+          "github.io"
+        ]
+      },
+      "type": "git-platform",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "source-control"
+    },
+    {
+      "id": "gitlab",
+      "name": "GitLab",
+      "description": "Web-based DevOps platform that provides Git repository management with CI/CD pipelines, issue tracking, and extensive DevOps features in a complete application",
+      "website": "https://gitlab.com",
+      "logo": {
+        "path": "/logos/devops/source-control/gitlab.png",
+        "domain": "gitlab.com",
+        "alternatives": [
+          "about.gitlab.com"
+        ]
+      },
+      "type": "git-platform",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "source-control"
+    },
+    {
+      "id": "bitbucket",
+      "name": "Bitbucket",
+      "description": "Git repository management solution that's built for professional teams with features for code review, pull requests, and CI/CD integration",
+      "website": "https://bitbucket.org",
+      "logo": {
+        "path": "/logos/devops/source-control/bitbucket.png",
+        "domain": "bitbucket.org",
+        "alternatives": [
+          "atlassian.com"
+        ]
+      },
+      "type": "git-platform",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "source-control"
+    },
+    {
+      "id": "azure-devops",
+      "name": "Azure DevOps",
+      "description": "Microsoft's suite of development tools including Git repositories, CI/CD pipelines, agile boards, and artifact management",
+      "website": "https://dev.azure.com",
+      "logo": {
+        "path": "/logos/devops/source-control/azure-devops.png",
+        "domain": "dev.azure.com",
+        "alternatives": [
+          "azure.microsoft.com"
+        ]
+      },
+      "type": "git-platform",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "source-control"
+    },
+    {
+      "id": "gitea",
+      "name": "Gitea",
+      "description": "Lightweight, self-hosted Git service written in Go, designed to be the easiest, fastest way to set up a self-hosted Git service",
+      "website": "https://gitea.io",
+      "logo": {
+        "path": "/logos/devops/source-control/gitea.png",
+        "domain": "gitea.io",
+        "alternatives": []
+      },
+      "type": "git-platform",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "source-control"
+    },
+    {
+      "id": "git",
+      "name": "Git",
+      "description": "Free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency",
+      "website": "https://git-scm.com",
+      "logo": {
+        "path": "/logos/devops/source-control/git.png",
+        "domain": "git-scm.com",
+        "alternatives": []
+      },
+      "type": "distributed-vcs",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "source-control"
+    },
+    {
+      "id": "mercurial",
+      "name": "Mercurial",
+      "description": "Free, distributed source control management tool that efficiently handles projects of any size with a simple and intuitive interface",
+      "website": "https://www.mercurial-scm.org",
+      "logo": {
+        "path": "/logos/devops/source-control/mercurial.png",
+        "domain": "mercurial-scm.org",
+        "alternatives": []
+      },
+      "type": "distributed-vcs",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "source-control"
+    },
+    {
+      "id": "subversion",
+      "name": "Apache Subversion",
+      "description": "Open-source version control system known for its reliability, simplicity and enterprise-focused features like path-based authorization",
+      "website": "https://subversion.apache.org",
+      "logo": {
+        "path": "/logos/devops/source-control/subversion.png",
+        "domain": "subversion.apache.org",
+        "alternatives": [
+          "apache.org"
+        ]
+      },
+      "type": "centralized-vcs",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "source-control"
+    },
+    {
+      "id": "perforce",
+      "name": "Perforce Helix Core",
+      "description": "Enterprise-class version control system designed for large files, large repos, and large numbers of users with advanced security and performance",
+      "website": "https://www.perforce.com/products/helix-core",
+      "logo": {
+        "path": "/logos/devops/source-control/perforce.png",
+        "domain": "perforce.com",
+        "alternatives": []
+      },
+      "type": "centralized-vcs",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "source-control"
+    },
+    {
+      "id": "plastic-scm",
+      "name": "Plastic SCM",
+      "description": "Version control system focused on graphics, game development, and large binary files with strong branching and merging capabilities",
+      "website": "https://www.plasticscm.com",
+      "logo": {
+        "path": "/logos/devops/source-control/plastic-scm.png",
+        "domain": "plasticscm.com",
+        "alternatives": [
+          "unity.com"
+        ]
+      },
+      "type": "specialized-vcs",
+      "categoryId": "devops-infrastructure",
+      "subcategoryId": "source-control"
+    }
+  ]
+}

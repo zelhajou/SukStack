@@ -1,0 +1,312 @@
+{
+  "tools": [
+    {
+      "id": "aws-cost-explorer",
+      "name": "AWS Cost Explorer",
+      "description": "Tool that enables visualization, understanding, and management of AWS costs and usage over time, helping identify cost-saving opportunities",
+      "website": "https://aws.amazon.com/aws-cost-management/aws-cost-explorer/",
+      "logo": {
+        "path": "/logos/cloud/cloud-management/aws-cost-explorer.png",
+        "domain": "aws.amazon.com",
+        "alternatives": [
+          "amazon.com"
+        ]
+      },
+      "type": "cloud-cost",
+      "categoryId": "cloud",
+      "subcategoryId": "cloud-management"
+    },
+    {
+      "id": "azure-cost-management",
+      "name": "Azure Cost Management",
+      "description": "Set of tools for monitoring, allocating, and optimizing Azure cloud costs with transparency, accuracy, and efficiency",
+      "website": "https://azure.microsoft.com/en-us/services/cost-management/",
+      "logo": {
+        "path": "/logos/cloud/cloud-management/azure-cost-management.png",
+        "domain": "azure.microsoft.com",
+        "alternatives": [
+          "microsoft.com"
+        ]
+      },
+      "type": "cloud-cost",
+      "categoryId": "cloud",
+      "subcategoryId": "cloud-management"
+    },
+    {
+      "id": "google-cloud-cost-management",
+      "name": "Google Cloud Cost Management",
+      "description": "Suite of tools that help you monitor, control, and optimize your Google Cloud costs with detailed reports and recommendations",
+      "website": "https://cloud.google.com/cost-management",
+      "logo": {
+        "path": "/logos/cloud/cloud-management/google-cloud-cost-management.png",
+        "domain": "cloud.google.com",
+        "alternatives": [
+          "google.com"
+        ]
+      },
+      "type": "cloud-cost",
+      "categoryId": "cloud",
+      "subcategoryId": "cloud-management"
+    },
+    {
+      "id": "cloudability",
+      "name": "Apptio Cloudability",
+      "description": "Multi-cloud financial management platform that provides visibility, optimization, and governance for cloud resources",
+      "website": "https://www.apptio.com/products/cloudability/",
+      "logo": {
+        "path": "/logos/cloud/cloud-management/cloudability.png",
+        "domain": "apptio.com",
+        "alternatives": [
+          "cloudability.com"
+        ]
+      },
+      "type": "cloud-cost",
+      "categoryId": "cloud",
+      "subcategoryId": "cloud-management"
+    },
+    {
+      "id": "cloudhealth",
+      "name": "CloudHealth by VMware",
+      "description": "Cloud management platform for monitoring, analyzing, and managing cloud cost, usage, performance, and security",
+      "website": "https://www.cloudhealthtech.com/",
+      "logo": {
+        "path": "/logos/cloud/cloud-management/cloudhealth.png",
+        "domain": "cloudhealthtech.com",
+        "alternatives": [
+          "vmware.com"
+        ]
+      },
+      "type": "cloud-cost",
+      "categoryId": "cloud",
+      "subcategoryId": "cloud-management"
+    },
+    {
+      "id": "aws-security-hub",
+      "name": "AWS Security Hub",
+      "description": "Service that provides a comprehensive view of security alerts and compliance status across AWS accounts",
+      "website": "https://aws.amazon.com/security-hub/",
+      "logo": {
+        "path": "/logos/cloud/cloud-management/aws-security-hub.png",
+        "domain": "aws.amazon.com",
+        "alternatives": [
+          "amazon.com"
+        ]
+      },
+      "type": "cloud-security",
+      "categoryId": "cloud",
+      "subcategoryId": "cloud-management"
+    },
+    {
+      "id": "azure-security-center",
+      "name": "Microsoft Defender for Cloud",
+      "description": "Unified infrastructure security management system that strengthens the security posture of your data centers and provides protection against threats",
+      "website": "https://azure.microsoft.com/en-us/services/defender-for-cloud/",
+      "logo": {
+        "path": "/logos/cloud/cloud-management/azure-security-center.png",
+        "domain": "azure.microsoft.com",
+        "alternatives": [
+          "microsoft.com"
+        ]
+      },
+      "type": "cloud-security",
+      "categoryId": "cloud",
+      "subcategoryId": "cloud-management"
+    },
+    {
+      "id": "cloud-security-command-center",
+      "name": "Google Security Command Center",
+      "description": "Comprehensive security management and risk platform for Google Cloud that provides visibility into cloud assets, vulnerabilities, and threats",
+      "website": "https://cloud.google.com/security-command-center",
+      "logo": {
+        "path": "/logos/cloud/cloud-management/cloud-security-command-center.png",
+        "domain": "cloud.google.com",
+        "alternatives": [
+          "google.com"
+        ]
+      },
+      "type": "cloud-security",
+      "categoryId": "cloud",
+      "subcategoryId": "cloud-management"
+    },
+    {
+      "id": "prisma-cloud",
+      "name": "Prisma Cloud",
+      "description": "Cloud-native security platform that provides visibility and threat protection across cloud environments, infrastructure, and applications",
+      "website": "https://www.paloaltonetworks.com/prisma/cloud",
+      "logo": {
+        "path": "/logos/cloud/cloud-management/prisma-cloud.png",
+        "domain": "paloaltonetworks.com",
+        "alternatives": []
+      },
+      "type": "cloud-security",
+      "categoryId": "cloud",
+      "subcategoryId": "cloud-management"
+    },
+    {
+      "id": "lacework",
+      "name": "Lacework",
+      "description": "Cloud security platform that automates cloud security across build time, runtime threats, and cloud configurations",
+      "website": "https://www.lacework.com/",
+      "logo": {
+        "path": "/logos/cloud/cloud-management/lacework.png",
+        "domain": "lacework.com",
+        "alternatives": []
+      },
+      "type": "cloud-security",
+      "categoryId": "cloud",
+      "subcategoryId": "cloud-management"
+    },
+    {
+      "id": "aws-cloudformation",
+      "name": "AWS CloudFormation",
+      "description": "Service for modeling and setting up AWS resources, enabling infrastructure as code with automated provisioning and updates",
+      "website": "https://aws.amazon.com/cloudformation/",
+      "logo": {
+        "path": "/logos/cloud/cloud-management/aws-cloudformation.png",
+        "domain": "aws.amazon.com",
+        "alternatives": [
+          "amazon.com"
+        ]
+      },
+      "type": "cloud-automation",
+      "categoryId": "cloud",
+      "subcategoryId": "cloud-management"
+    },
+    {
+      "id": "azure-resource-manager",
+      "name": "Azure Resource Manager",
+      "description": "Deployment and management service that provides a consistent management layer to create, update, and delete resources in your Azure subscription",
+      "website": "https://azure.microsoft.com/en-us/features/resource-manager/",
+      "logo": {
+        "path": "/logos/cloud/cloud-management/azure-resource-manager.png",
+        "domain": "azure.microsoft.com",
+        "alternatives": [
+          "microsoft.com"
+        ]
+      },
+      "type": "cloud-automation",
+      "categoryId": "cloud",
+      "subcategoryId": "cloud-management"
+    },
+    {
+      "id": "google-cloud-deployment-manager",
+      "name": "Google Cloud Deployment Manager",
+      "description": "Infrastructure deployment service that automates the creation and management of Google Cloud resources using templates",
+      "website": "https://cloud.google.com/deployment-manager",
+      "logo": {
+        "path": "/logos/cloud/cloud-management/google-cloud-deployment-manager.png",
+        "domain": "cloud.google.com",
+        "alternatives": [
+          "google.com"
+        ]
+      },
+      "type": "cloud-automation",
+      "categoryId": "cloud",
+      "subcategoryId": "cloud-management"
+    },
+    {
+      "id": "pulumi",
+      "name": "Pulumi",
+      "description": "Infrastructure as code platform that enables creating, deploying, and managing cloud infrastructure using familiar programming languages",
+      "website": "https://www.pulumi.com/",
+      "logo": {
+        "path": "/logos/cloud/cloud-management/pulumi.png",
+        "domain": "pulumi.com",
+        "alternatives": []
+      },
+      "type": "cloud-automation",
+      "categoryId": "cloud",
+      "subcategoryId": "cloud-management"
+    },
+    {
+      "id": "cloudify",
+      "name": "Cloudify",
+      "description": "Open source multi-cloud orchestration platform that automates cloud infrastructure setup, deployment, management, and scaling",
+      "website": "https://cloudify.co/",
+      "logo": {
+        "path": "/logos/cloud/cloud-management/cloudify.png",
+        "domain": "cloudify.co",
+        "alternatives": []
+      },
+      "type": "cloud-automation",
+      "categoryId": "cloud",
+      "subcategoryId": "cloud-management"
+    },
+    {
+      "id": "aws-cloudwatch",
+      "name": "Amazon CloudWatch",
+      "description": "Monitoring and observability service that provides data and insights to monitor applications, respond to performance changes, and optimize resource utilization",
+      "website": "https://aws.amazon.com/cloudwatch/",
+      "logo": {
+        "path": "/logos/cloud/cloud-management/aws-cloudwatch.png",
+        "domain": "aws.amazon.com",
+        "alternatives": [
+          "amazon.com"
+        ]
+      },
+      "type": "cloud-monitoring",
+      "categoryId": "cloud",
+      "subcategoryId": "cloud-management"
+    },
+    {
+      "id": "azure-monitor",
+      "name": "Azure Monitor",
+      "description": "Comprehensive solution for collecting, analyzing, and acting on telemetry from your cloud and on-premises environments",
+      "website": "https://azure.microsoft.com/en-us/services/monitor/",
+      "logo": {
+        "path": "/logos/cloud/cloud-management/azure-monitor.png",
+        "domain": "azure.microsoft.com",
+        "alternatives": [
+          "microsoft.com"
+        ]
+      },
+      "type": "cloud-monitoring",
+      "categoryId": "cloud",
+      "subcategoryId": "cloud-management"
+    },
+    {
+      "id": "google-cloud-monitoring",
+      "name": "Google Cloud Monitoring",
+      "description": "Service that provides visibility into the performance, uptime, and overall health of cloud-powered applications",
+      "website": "https://cloud.google.com/monitoring",
+      "logo": {
+        "path": "/logos/cloud/cloud-management/google-cloud-monitoring.png",
+        "domain": "cloud.google.com",
+        "alternatives": [
+          "google.com"
+        ]
+      },
+      "type": "cloud-monitoring",
+      "categoryId": "cloud",
+      "subcategoryId": "cloud-management"
+    },
+    {
+      "id": "datadog",
+      "name": "Datadog",
+      "description": "Monitoring service for cloud-scale applications, providing observability of servers, databases, tools, and services through a SaaS-based platform",
+      "website": "https://www.datadoghq.com/",
+      "logo": {
+        "path": "/logos/cloud/cloud-management/datadog.png",
+        "domain": "datadoghq.com",
+        "alternatives": []
+      },
+      "type": "cloud-monitoring",
+      "categoryId": "cloud",
+      "subcategoryId": "cloud-management"
+    },
+    {
+      "id": "dynatrace",
+      "name": "Dynatrace",
+      "description": "AI-powered monitoring solution that provides automatic and intelligent observability across hybrid multi-cloud environments",
+      "website": "https://www.dynatrace.com/",
+      "logo": {
+        "path": "/logos/cloud/cloud-management/dynatrace.png",
+        "domain": "dynatrace.com",
+        "alternatives": []
+      },
+      "type": "cloud-monitoring",
+      "categoryId": "cloud",
+      "subcategoryId": "cloud-management"
+    }
+  ]
+}

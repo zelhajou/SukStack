@@ -1,0 +1,72 @@
+{
+    "id": "serverless",
+    "categoryId": "cloud",
+    "title": "Serverless Computing",
+    "description": "Serverless computing is a cloud execution model where the cloud provider dynamically manages the allocation and provisioning of servers, allowing developers to build and run applications without thinking about servers, scaling, or infrastructure management.",
+    "sections": [
+      {
+        "id": "faas",
+        "title": "Function as a Service (FaaS)",
+        "description": "Services that allow running individual functions in response to events without managing server infrastructure"
+      },
+      {
+        "id": "baas",
+        "title": "Backend as a Service (BaaS)",
+        "description": "Services that provide pre-built backend capabilities like database, authentication, and storage"
+      },
+      {
+        "id": "serverless-frameworks",
+        "title": "Serverless Frameworks",
+        "description": "Tools and frameworks that simplify serverless application development and deployment"
+      },
+      {
+        "id": "event-streaming",
+        "title": "Event Processing & Streaming",
+        "description": "Serverless event processing and streaming services for real-time data pipelines"
+      }
+    ],
+    "bestPractices": [
+      "**Stateless Design**: Design functions to be stateless for better scaling and reliability",
+      "**Function Size**: Keep functions small, focused, and with minimal dependencies",
+      "**Cold Start Optimization**: Minimize cold start times by optimizing code and dependencies",
+      "**Monitoring & Logging**: Implement comprehensive monitoring and logging for debugging",
+      "**Security**: Follow the principle of least privilege for function execution roles",
+      "**Timeouts**: Set appropriate timeouts based on expected function execution times",
+      "**Error Handling**: Implement robust error handling and retry mechanisms",
+      "**Cost Monitoring**: Track function invocations, duration, and memory usage to optimize costs"
+    ],
+    "integrations": [
+      "**API Gateways**: Integration with API gateways for HTTP endpoints and request routing",
+      "**Event Sources**: Connect functions to various event sources like storage, messaging, and databases",
+      "**Identity Services**: Authentication and authorization through integrated identity providers",
+      "**Monitoring Tools**: Integration with monitoring and observability platforms",
+      "**DevOps Tools**: CI/CD pipelines for automated testing and deployment of serverless applications"
+    ],
+    "resources": [
+      {
+        "title": "AWS Lambda Documentation",
+        "url": "https://docs.aws.amazon.com/lambda/",
+        "type": "documentation"
+      },
+      {
+        "title": "Serverless Architectures",
+        "url": "https://martinfowler.com/articles/serverless.html",
+        "type": "article"
+      },
+      {
+        "title": "Azure Functions Documentation",
+        "url": "https://docs.microsoft.com/en-us/azure/azure-functions/",
+        "type": "documentation"
+      },
+      {
+        "title": "Serverless Framework Documentation",
+        "url": "https://www.serverless.com/framework/docs/",
+        "type": "documentation"
+      },
+      {
+        "title": "Serverless Applications: Building Scalable Apps with Cloud Functions",
+        "url": "https://www.oreilly.com/library/view/serverless-applications-with/9781617293825/",
+        "type": "book"
+      }
+    ]
+  }
